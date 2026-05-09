@@ -137,13 +137,12 @@ For high-quality, seamless patterns (like wood, brick, or concrete), check out [
 
 ---
 
-## 8. Day 1 Assignment: Environment Concept
+## 8. Homework: Environment Foundations
 
-Your goal for today is to finish the basic "greybox" layout of your environment.
-1. **The Concept:** What is this space? A gallery, a forest, a temple, a digital glitch?
-2. **The Sketch:** Use ProBuilder to build the floor, walls, and main focal points.
-3. **The Walkthrough:** Make sure your First Person Controller can move through the space without getting stuck.
-
-Next session, we will start "texturing" the world and importing assets.
+Your goal before the next session is to finish the core layout of your environment.
+1. **Architecture:** Use ProBuilder to finalize your floor, walls, and main focal points.
+2. **Audio:** Incorporate at least one **3D Audio Source** (e.g., ambient wind, water, or mechanical hum).
+3. **Imagery:** Import and place at least one **outside image** (JPG/PNG) on a wall or surface.
+4. **Navigation:** Ensure your First Person Controller can walk through the entire space smoothly.
 
 [Click here for some short video tutorials on ProBuilder](https://unity.com/features/probuilder)

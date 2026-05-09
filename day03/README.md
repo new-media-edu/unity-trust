@@ -67,10 +67,11 @@ We've provided a set of scripts in `_Workshop_Assets/Scripts/` to add life to yo
 
 ---
 
-## Day 3 Assignment: The 30-Second Flythrough
+## Homework: Atmosphere & Pacing
 
-1. **Mood:** Dial in your lighting. Add at least one "God Ray" effect using Volumetric Fog.
-2. **Interactivity:** Add at least two scripted elements (e.g., a rotating sculpture and a triggered light).
-3. **The Cutscene:** Create a 30-second Timeline that shows off the three most interesting parts of your environment.
+Prepare your project for the final showcase.
+1. **Refine Lighting:** Dial in your mood. Use Volumetric Fog to create "God Rays" or specific atmospheric density.
+2. **Interactivity:** Add at least two scripted elements (e.g., a rotating sculpture or a triggered event) to make the space feel alive.
+3. **Cinematic Cutscene:** Refine your 30-second Timeline flythrough. Focus on smooth camera transitions and interesting angles.
 
 Next session: **Final Polish, Sound, and Export.**

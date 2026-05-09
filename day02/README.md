@@ -67,10 +67,11 @@ Add a "mood" to your scene with basic particles.
 
 ---
 
-## Day 2 Assignment: Populate & Texture
+## Homework: Populating the World
 
-1. **Materials:** Apply custom materials to all your ProBuilder surfaces. Use Normal Maps for realism.
-2. **Assets:** Import at least 3 external assets (scans or Asset Store) into your scene.
-3. **Modularity:** Create at least one Prefab (e.g., a "Gallery Pedestal" or "Street Lamp") and reuse it.
+Before Session 3, continue developing the visual density of your space.
+1. **Texturing:** Finish applying custom materials to all surfaces. Ensure you are using Normal Maps for added detail.
+2. **Asset Integration:** Import and place at least 3 external assets (from Polycam scans or the Asset Store).
+3. **Modularity:** Create and place at least one custom Prefab to build out your scene efficiently.
 
 Next session: We bring the mood with **Lighting** and **Cinematics**.

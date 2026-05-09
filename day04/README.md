@@ -54,6 +54,15 @@ The last hour will be spent presenting our worlds to each other.
 
 ---
 
+## Final Homework: Deployment & Sharing
+
+Now that your environment is built, take it further:
+1. **Recording:** Render a high-quality (1080p or 4K) version of your flythrough using Unity Recorder.
+2. **Standalone Build:** Attempt to "Build" your project for Mac or Windows to share it as a playable file.
+3. **Documentation:** Write a short artist statement or description for your portfolio, explaining the concept behind your virtual environment.
+
+---
+
 ## Beyond the Workshop
 
 Your Unity journey doesn't end here.
