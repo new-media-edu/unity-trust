@@ -7,7 +7,7 @@
 ---
 
 ## Overview
-This workshop is an intensive dive into real-time 3D creation using Unity 6. Designed for artists and designers, it focuses on building immersive environments that tell a story without requiring extensive coding. We map the fundamentals of spatial design, lighting, and cinematic presentation onto a streamlined Unity workflow.
+This workshop is an intensive dive into real-time 3D creation using Unity 6. In this no-code Unity workshop students will learn how to create and inhabit virtual environments, focusing on real-time lighting, physics, and spatial audio.
 
 ---
 
