@@ -55,6 +55,6 @@ This workshop is an intensive dive into real-time 3D creation using Unity 6. In 
 - Apply storytelling principles to visual worldbuilding.
 - Develop and pitch a spatial concept.
 - Master lighting, materials, and atmospheric effects.
-- Use Timeline/Cinemachine for cinematic presentation.
+- Use Timeline/Cinemachine for playable or cinematic presentation.
 - Implement spatial audio for immersive experiences.
 - Present professional work for a portfolio or showreel.
