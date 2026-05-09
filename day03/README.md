@@ -70,6 +70,18 @@ We've provided a set of scripts in `_Workshop_Assets/Scripts/` to add life to yo
 ## Homework: Atmosphere & Pacing
 
 Prepare your project for the final showcase.
+1. **Refine Lighting & Sound:** Dial in your mood. Use Volumetric Fog for visual density and ambient wind/audio to ground the space.
+2. **Interactivity:** Add at least two scripted elements (e.g., a rotating sculpture or a triggered event) to make the space feel alive.
+3. **Cinematic Cutscene:** Refine your 30-second Timeline flythrough. Focus on smooth camera transitions and interesting angles.
+
+Next session: **Post-Processing, Builds, and Showcase.**
+t onto an object in the Hierarchy and look at the Inspector to adjust the settings.
+
+---
+
+## Homework: Atmosphere & Pacing
+
+Prepare your project for the final showcase.
 1. **Refine Lighting:** Dial in your mood. Use Volumetric Fog to create "God Rays" or specific atmospheric density.
 2. **Interactivity:** Add at least two scripted elements (e.g., a rotating sculpture or a triggered event) to make the space feel alive.
 3. **Cinematic Cutscene:** Refine your 30-second Timeline flythrough. Focus on smooth camera transitions and interesting angles.

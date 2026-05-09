@@ -1,8 +1,8 @@
-# Day 04: Polish, Sound & Final Showcase
+# Day 04: Post-Processing, Builds & Final Showcase
 
 **Session Time:** 2.5 Hours
 
-The final session is about that last 10% of polish that makes a project feel professional. We'll add a cinematic look, immersive audio, and record your final work.
+The final session is about that last 10% of polish that makes a project feel professional. We'll add a cinematic look, create standalone playable files, and showcase our work.
 
 ---
 
@@ -17,17 +17,15 @@ Think of Post-Processing as "Photoshop for your 3D world." We use the **Global V
 
 ---
 
-## 2. Spatial Audio Scapes
+## 2. Building for the Real World (Standalone Builds)
 
-Sound is 50% of the experience.
+To share your environment as a "playable" experience, we need to export it from the Unity Editor.
 
-### 3D Audio
-1. Create an **Audio Source**.
-2. Set **Spatial Blend** to **3D**.
-3. Adjust the **Volume Rolloff** graph so the sound fades as you walk away.
-
-### Audio Reverb Zones
-Add an **Audio Reverb Zone** to a room (e.g., a large hall) to give everything inside a specific echo or reverb. This makes the space feel physically real.
+### The Build Process
+1. Go to `File > Build Settings`.
+2. Ensure your current scene is in the **Scenes In Build** list.
+3. Select your platform (Mac, Windows, or Linux).
+4. Click **Build** and choose a folder. Unity will package everything into a single `.app` or `.exe` that anyone can run without needing Unity installed.
 
 ---
 
