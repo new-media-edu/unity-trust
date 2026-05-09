@@ -1,4 +1,4 @@
-# Unity for Artists: Virtual Worlds & Environment Design
+# Unity for Artists: Virtual Environments
 
 This 4-day intensive workshop is designed for artists and designers who want to use Unity 6 to build immersive digital environments. We skip the heavy coding and focus on a high-fidelity, real-time workflow that prioritizes visual storytelling, lighting, and cinematic presentation.
 

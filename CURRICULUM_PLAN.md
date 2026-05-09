@@ -1,4 +1,4 @@
-# Unity 4-Day Intensive Workshop: Environment Design & Storytelling
+# Unity for Artists: Virtual Environments
 
 **Location:** Trust, Berlin  
 **Duration:** 4 Days (2.5 hours per session)  
