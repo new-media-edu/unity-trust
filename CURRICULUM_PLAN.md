@@ -7,7 +7,7 @@
 ---
 
 ## Overview
-This workshop is an intensive dive into real-time 3D creation using Unity 6—a real-time 3D engine used widely in games, art, and architecture. In this no-code Unity workshop students will learn how to create and inhabit virtual environments, focusing on environmental design, lighting, physics, and spacial audio.
+This workshop is an intensive dive into real-time 3D creation using Unity 6 (a real-time 3D engine used widely in games, art, and architecture). In this no-code Unity workshop students will learn how to create and inhabit virtual environments, focusing on environmental design, lighting, physics, and spacial audio.
 
 ---
 
