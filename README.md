@@ -1,6 +1,6 @@
 # Unity for Artists: Virtual Environments
 
-This 4-day intensive workshop is designed for artists and designers who want to use Unity 6 to build immersive digital environments. In this no-code Unity workshop students will learn how to create and inhabit virtual environments, focusing on real-time lighting, physics, and spatial audio.
+This 4-day intensive workshop is designed for artists and designers who want to use Unity 6 to build immersive digital environments. In this no-code Unity workshop students will learn how to create and inhabit virtual environments, focusing on environmental design, lighting, physics, and spacial audio.
 
 By the end of the course, you will have designed, built, and rendered a professional 3D environment as either a playable experience or a cinematic presentation.
 
