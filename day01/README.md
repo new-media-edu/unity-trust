@@ -23,6 +23,12 @@ When you first open the Unity Hub, click **New Project** and select the **Univer
 
 ---
 
+Unity's interface can look complex, but you only need five main windows to build your world: **Hierarchy**, **Project**, **Scene**, **Game**, and **Inspector**.
+
+![Unity Views](../images/unity-views.png)
+
+---
+
 ## 2. Creating Your First Objects
 
 Right-click in the **Hierarchy** and select **3D Object > Plane** to create a floor. Then do the same to add a **Cube** (**3D Object > Cube**).
@@ -40,10 +46,6 @@ Press the **Play** button at the top. You might notice the camera is looking at 
 ---
 
 ## 3. Navigating the 3D World
-
-Unity's interface can look complex, but you only need five main windows to build your world: **Hierarchy**, **Project**, **Scene**, **Game**, and **Inspector**.
-
-![Unity Views](../images/unity-views.png)
 
 ### Mastering Movement
 Right-click in the **Scene view** and use **WASD** to fly around like a video game. To manipulate objects, keep these shortcuts in mind:
