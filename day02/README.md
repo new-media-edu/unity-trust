@@ -10,11 +10,8 @@ Today we transition from a "greybox" layout to a textured, populated world. We'l
 
 Unity supports various 3D formats, but **FBX** and **GLB/GLTF** are the most common.
 
-### Importing Scans (Polycam)
-If you've created photogrammetry scans, now is the time to bring them in.
-- Export from Polycam as `.glb` or `.obj`.
-- Drag the file into your **Project** window.
-- **Scaling:** Scans often come in at the wrong size. Use the **Scale Factor** in the Import Settings or the Scale tool (R) to fix it.
+### Introduction to Polycam & Photogrammetry
+Photogrammetry is the process of using photos to create 3D models. We'll be using **Polycam** to capture real-world objects. For now, download the app and start thinking about objects or spaces you'd like to scan. We'll import these scans into Unity in Session 3.
 
 ### The Unity Asset Store
 The [Asset Store](https://assetstore.unity.com/) is a massive library of free and paid assets.
@@ -39,7 +36,19 @@ To create glass or fences, change the **Surface Type** from **Opaque** to **Tran
 
 ---
 
-## 3. Modular Design & Prefabs
+## 3. Lighting Design
+
+Lighting is the most powerful tool for setting a mood.
+
+### Light Types in URP
+- **Directional Light:** Your "Sun." Controls time of day and global shadows.
+- **Point Light:** A bulb that radiates in all directions.
+- **Spotlight:** A focused beam (perfect for gallery highlights).
+- **Area Light:** Soft, window-like lighting (requires "Baking").
+
+---
+
+## 4. Modular Design & Prefabs
 
 Building a large environment piece-by-piece is slow. Instead, we use **Prefabs**.
 
@@ -54,7 +63,7 @@ Use snapping (the magnet icon) to line up modular walls or floors perfectly. Thi
 
 ---
 
-## 4. Environmental Detail
+## 5. Environmental Detail
 
 ### Foliage & Terrain
 For natural environments, you can use Unity's **Terrain** system or simple mesh-based trees.
@@ -71,7 +80,7 @@ Add a "mood" to your scene with basic particles.
 
 Before Session 3, continue developing the visual density of your space.
 1. **Texturing:** Finish applying custom materials to all surfaces. Ensure you are using Normal Maps for added detail.
-2. **Asset Integration:** Import and place at least 3 external assets (from Polycam scans or the Asset Store).
+2. **Polycam Scans:** Use the Polycam app to scan at least 2 real-world objects. We'll import these next time.
 3. **Modularity:** Create and place at least one custom Prefab to build out your scene efficiently.
 
 Next session: We bring the mood with **Lighting** and **Cinematics**.

@@ -6,15 +6,16 @@ Today we transform your environment into a living, breathing world through advan
 
 ---
 
-## 1. Advanced Lighting Design
+## 1. Bringing the Real World In: Importing Scans
 
-Lighting is the most powerful tool for setting a mood.
+If you created photogrammetry scans with Polycam, now is the time to bring them in.
+- Export from Polycam as `.glb` or `.obj`.
+- Drag the file into your **Project** window.
+- **Scaling:** Scans often come in at the wrong size. Use the **Scale Factor** in the Import Settings or the Scale tool (R) to fix it.
 
-### Light Types in URP
-- **Directional Light:** Your "Sun." Controls time of day and global shadows.
-- **Point Light:** A bulb that radiates in all directions.
-- **Spotlight:** A focused beam (perfect for gallery highlights).
-- **Area Light:** Soft, window-like lighting (requires "Baking").
+---
+
+## 2. Advanced Atmosphere
 
 ### Volumetric Effects (Unity 6)
 Unity 6 introduces enhanced **Volumetric Fog and Clouds**.
@@ -27,7 +28,7 @@ Your scene automatically includes a **Global Volume**. Think of this as a cinema
 
 ---
 
-## 2. Mood & Reflection
+## 3. Mood & Reflection
 
 ### Skyboxes
 The Skybox provides the background and the "ambient" light. 
@@ -41,7 +42,7 @@ The Skybox provides the background and the "ambient" light.
 
 ---
 
-## 3. Cinematics with Timeline & Cinemachine
+## 4. Cinematics with Timeline & Cinemachine
 
 We’ll use **Timeline** to create a cinematic "flythrough" of your space.
 
@@ -57,7 +58,7 @@ We’ll use **Timeline** to create a cinematic "flythrough" of your space.
 
 ---
 
-## 4. Scripted Interactivity (No Coding Required)
+## 5. Scripted Interactivity (No Coding Required)
 
 We've provided a set of scripts in `_Workshop_Assets/Scripts/` to add life to your scene.
 
