@@ -48,8 +48,11 @@ Press the **Play** button at the top. You might notice the camera is looking at 
 ## 3. Navigating the 3D World
 
 ### Mastering Movement
-Right-click in the **Scene view** and use **WASD** to fly around like a video game. To manipulate objects, keep these shortcuts in mind:
-*   **W** – Move
+Right-click in the **Scene view** and use **WASD** to fly around like a video game. 
+
+### Mastering Object Manipulation
+To manipulate objects, keep these shortcuts in mind:
+*   **W** - Move
 *   **E** – Rotate
 *   **R** – Scale
 *   **Y is Up** – Always remember the vertical axis is Y.
