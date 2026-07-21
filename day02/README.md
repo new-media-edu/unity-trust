@@ -46,7 +46,7 @@ Building a large environment piece-by-piece is slow. Instead, we use **Prefabs**
 ### Creating a Prefab
 1. Build an object in your scene (e.g., a lamp with a light source and a stand).
 2. Drag the object from the **Hierarchy** into the **Project** folder.
-3. It turns blue—this is now a Prefab!
+3. It turns blue-this is now a Prefab!
 4. You can now drag as many copies as you want into the scene. If you edit the Prefab file, **every copy** in the scene updates automatically.
 
 ### Modular Workflows

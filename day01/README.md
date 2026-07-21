@@ -13,7 +13,7 @@ Before we begin, download the class files we'll be using throughout the workshop
 **[⬇ Download Class Files (.zip)](https://github.com/new-media-edu/unity-trust/archive/refs/heads/main.zip)**
 
 > [!NOTE]
-> These files may be updated between sessions. If you're told to re-download, simply grab the latest `.zip` from the link above and replace your old copy — you can safely delete the previous download.
+> These files may be updated between sessions. If you're told to re-download, simply grab the latest `.zip` from the link above and replace your old copy - you can safely delete the previous download.
 
 ---
 
@@ -29,8 +29,6 @@ Unity’s interface can look complex, but you only need five main windows to bui
 
 ![Unity Views](../images/unity-views.png)
 
-### Getting Your Bearings
-Before we start flying around, let's drop in a visual reference so you're not staring into the void. Right-click in the **Hierarchy** and select **3D Object > Plane**. This gives you a flat surface to orient yourself — think of it as the "ground." You'll immediately have a sense of up, down, and where objects will sit.
 
 ### Mastering Movement
 Right-click in the **Scene view** and use **WASD** to fly around like a video game. To manipulate objects, keep these shortcuts in mind:
@@ -42,16 +40,27 @@ Right-click in the **Scene view** and use **WASD** to fly around like a video ga
 ![Basic Controls](../images/unity-basic_controls.png)
 ![Unity XYZ](../images/unity-xyz.png)
 
+### Navigation Tips
+*   **Option + Left-click drag** - Orbit around a focal point (great for inspecting objects)
+*   **Middle-click drag** - Pan the view
+*   **F** - Frame/snap the view to whatever object is selected
+*   **Double-click** an object in the Hierarchy to jump straight to it
+*   **Scroll wheel** or **two-finger scroll** (trackpad) - Zoom in/out
+*   **Cmd + D** - Duplicate selected object
+*   **Cmd + Z / Cmd + Shift + Z** - Undo/redo (works on almost everything, including moving objects)
+
+> **Note:** Flythrough mode (right-click + WASD) is the only way to get free movement in the Scene view. If you're on a trackpad and finding it difficult, plug in a mouse.
+
 > **Deep Dive:** [Explore the Unity Editor](https://learn.unity.com/tutorial/explore-the-unity-editor-1?version=2021.3)
 
 ---
 
 ## 3. Creating Your First Objects
 
-Let's populate the void. Right-click in the **Hierarchy** and select **3D Object > Plane** to create a floor.
+Right-click in the **Hierarchy** and select **3D Object > Plane** to create a floor. Then do the same to add a **Cube** (**3D Object > Cube**).
 
 ### Precision Placement
-Next, add a **Cube**. Look at the **Inspector** tab on the right to see its **X, Y, and Z** coordinates. To ensure it's perfectly centered, click the three vertical dots next to the **Transform** component and select **Reset**. This snaps it to (0, 0, 0).
+Select the Cube and look at the **Inspector** tab on the right to see its **X, Y, and Z** coordinates. To ensure it's perfectly centered, click the three vertical dots next to the **Transform** component and select **Reset**. This snaps it to (0, 0, 0).
 
 ### Setting the View
 Press the **Play** button at the top. You might notice the camera is looking at nothing. To fix this:
@@ -93,7 +102,7 @@ Before building, look at the top of the Scene view:
 4.  Switch to **Face Selection** (orange icon), select the edges of your floor, and hold **Shift** while dragging up to **extrude** your walls.
 
 ### Creative Experimentation
-Try selecting a face and using the **Scale tool (R)** while holding **Shift**. This "insets" the face, creating a new surface inside the original one—perfect for windows or architectural details.
+Try selecting a face and using the **Scale tool (R)** while holding **Shift**. This "insets" the face, creating a new surface inside the original one-perfect for windows or architectural details.
 
 <img src="../images/unity-probuilder-inset1.png" width="48%" /> <img src="../images/unity-probuilder-inset2.png" width="48%" />
 
