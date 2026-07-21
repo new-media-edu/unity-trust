@@ -6,6 +6,17 @@ Welcome to your first steps in Unity. Today, we're moving from a blank slate to 
 
 ---
 
+## 📥 Download Class Files
+
+Before we begin, download the class files we'll be using throughout the workshop:
+
+**[⬇ Download Class Files (.zip)](https://github.com/new-media-edu/unity-trust/archive/refs/heads/main.zip)**
+
+> [!NOTE]
+> These files may be updated between sessions. If you're told to re-download, simply grab the latest `.zip` from the link above and replace your old copy — you can safely delete the previous download.
+
+---
+
 ## 1. Foundation: Project Setup
 
 When you first open the Unity Hub, click **New Project** and select the **Universal 3D** template. This uses the **Universal Render Pipeline (URP)**, which is the industry standard for performance and high-quality visual effects.
