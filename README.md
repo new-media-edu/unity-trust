@@ -8,7 +8,7 @@ By the end of the course, you will have designed, built, and rendered a professi
 
 Join our class Signal group to chat, ask questions, and share resources!
 
-**[📱 Join the Signal Group](https://signal.group/#CjQKIHZJw6nlPiZvquXkkxhmEcn2JCQ94xB-fbIHL3DHZnOmEhBIRygtmqIEIwgqAQGbELir)**
+**[ Join the Signal Group](https://signal.group/#CjQKIHZJw6nlPiZvquXkkxhmEcn2JCQ94xB-fbIHL3DHZnOmEhBIRygtmqIEIwgqAQGbELir)**
 
 <img src="images/signal-qr.png" width="300" alt="Signal Group QR Code" />
 

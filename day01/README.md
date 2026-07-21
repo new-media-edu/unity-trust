@@ -6,11 +6,11 @@ Welcome to your first steps in Unity. Today, we're moving from a blank slate to 
 
 ---
 
-## 📥 Download Class Files
+##  Download Class Files
 
 Before we begin, download the class files we'll be using throughout the workshop:
 
-**[⬇ Download Class Files (.zip)](https://github.com/new-media-edu/unity-trust/archive/refs/heads/main.zip)**
+**[ Download Class Files (.zip)](https://github.com/new-media-edu/unity-trust/archive/refs/heads/main.zip)**
 
 > [!NOTE]
 > These files may be updated between sessions. If you're told to re-download, simply grab the latest `.zip` from the link above and replace your old copy - you can safely delete the previous download.
