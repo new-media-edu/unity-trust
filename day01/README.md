@@ -75,13 +75,12 @@ To manipulate objects, keep these shortcuts in mind:
 
 ---
 
-## 4. Physics & Atmosphere
+## 4. Physics in Action
 
-### Gravity in Action
+### Gravity & Physics Materials
 Add a **Sphere** and position it directly above your Cube. With the sphere selected, click **Add Component** in the Inspector and search for **Rigidbody**. To make it more interesting, select your Cube and use the **Rotate tool (E)** to tilt it slightly. Hit **Play** and watch the sphere react to gravity!
 
-### Atmospheric Effects
-Your scene automatically includes a **Global Volume**. Think of this as a cinematic filter for your camera. Select it in the Hierarchy, find the **Vignette** effect in the Inspector, and try increasing the **Intensity**. This darkens the edges of the screen for a focused, gallery-like feel.
+*Tip: Try creating a **Physics Material** (Right-click in Project view > Create > Physics Material) to add bounciness or adjust friction, then apply it to your Sphere's Collider!*
 
 ---
 

@@ -22,6 +22,9 @@ Unity 6 introduces enhanced **Volumetric Fog and Clouds**.
 2. Add the **Fog** override. 
 3. Enable **Volumetric Fog** to see light beams (god rays) cutting through the air.
 
+### Atmospheric Effects & Post-Processing
+Your scene automatically includes a **Global Volume**. Think of this as a cinematic filter for your camera. Select it in the Hierarchy, find the **Vignette** effect in the Inspector, and try increasing the **Intensity**. This darkens the edges of the screen for a focused, gallery-like feel.
+
 ---
 
 ## 2. Mood & Reflection
