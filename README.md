@@ -4,6 +4,14 @@ This 4-day intensive workshop is designed for artists and designers who want to 
 
 By the end of the course, you will have designed, built, and rendered a professional 3D environment as either a playable experience or a cinematic presentation.
 
+## Join the Class Chat
+
+Join our class Signal group to chat, ask questions, and share resources!
+
+**[📱 Join the Signal Group](https://signal.group/#CjQKIHZJw6nlPiZvquXkkxhmEcn2JCQ94xB-fbIHL3DHZnOmEhBIRygtmqIEIwgqAQGbELir)**
+
+<img src="images/signal-qr.png" width="300" alt="Signal Group QR Code" />
+
 ## Before you arrive
 
 You'll need these installed and ready to go:
