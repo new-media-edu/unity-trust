@@ -29,6 +29,9 @@ Unity’s interface can look complex, but you only need five main windows to bui
 
 ![Unity Views](../images/unity-views.png)
 
+### Getting Your Bearings
+Before we start flying around, let's drop in a visual reference so you're not staring into the void. Right-click in the **Hierarchy** and select **3D Object > Plane**. This gives you a flat surface to orient yourself — think of it as the "ground." You'll immediately have a sense of up, down, and where objects will sit.
+
 ### Mastering Movement
 Right-click in the **Scene view** and use **WASD** to fly around like a video game. To manipulate objects, keep these shortcuts in mind:
 *   **W** – Move
