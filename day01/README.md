@@ -112,6 +112,7 @@ The real power of ProBuilder is that you can manipulate individual faces, edges,
 *   **Extrude (Rotate):** Select a face, hold **Shift**, and drag with the **Rotate tool (E)**. This twists and extrudes the geometry outward.
 *   **Inset (Scale):** Select a face, hold **Shift**, and drag with the **Scale tool (R)**. This creates a new, smaller face inside the original one-perfect for making window frames.
 *   **Delete Faces:** Select a face and press **Backspace / Delete** to cut a hole into your shape.
+*   **Exit Edit Mode:** Press **ESC** to stop manipulating the current ProBuilder shape and return to object selection.
 
 <img src="../images/unity-probuilder-inset1.png" width="48%" /> <img src="../images/unity-probuilder-inset2.png" width="48%" />
 
