@@ -99,16 +99,3 @@ Maclean uses virtual sets and green-screen compositing to create surreal, satura
  <a href="https://www.davidoreilly.com/everything" target="_blank">Everything - Official Site</a>
 
 ---
-
-## Teaching Takeaways
-
-These projects pair naturally to illustrate different dimensions of working in Unity:
-
-###  Autonomous Logic & AI
-Pair **Ian Cheng** and **Theo Triantafyllidis** to demonstrate how C# scripts drive unpredictable, unending agent interactions on screen.
-
-###  Interactive Installations
-Pair **Danielle Brathwaite-Shirley** and **Cécile B. Evans** to show how real-time engine states can be bound to physical gallery architecture and audience inputs.
-
-###  Environmental Art & Cinematic Production
-Pair **Jakob Kudsk Steensen** and **Rachel Maclean** to contrast photorealistic environmental asset pipelines with stylized virtual production lighting and camera direction.
