@@ -47,10 +47,10 @@ Press the **Play** button at the top. You might notice the camera is looking at 
 
 ## 3. Navigating the 3D World
 
-### Mastering Movement
+### How to Move Around in Unity
 Right-click in the **Scene view** and use **WASD** to fly around like a video game. 
 
-### Mastering Object Manipulation
+### How to Manipulate Objects
 To manipulate objects, keep these shortcuts in mind:
 *   **W** - Move
 *   **E** – Rotate
