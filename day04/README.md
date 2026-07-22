@@ -6,7 +6,7 @@ The final session is about that last 10% of polish that makes a project feel pro
 
 ---
 
-## 1. Post-Processing Mastery
+## Post-Processing Mastery
 
 Think of Post-Processing as "Photoshop for your 3D world." We use the **Global Volume** to apply these effects.
 
@@ -17,7 +17,7 @@ Think of Post-Processing as "Photoshop for your 3D world." We use the **Global V
 
 ---
 
-## 2. Building for the Real World (Standalone Builds)
+## Building for the Real World (Standalone Builds)
 
 To share your environment as a "playable" experience, we need to export it from the Unity Editor.
 
@@ -29,7 +29,7 @@ To share your environment as a "playable" experience, we need to export it from 
 
 ---
 
-## 3. Rendering & Output
+## Rendering & Output
 
 To show your work outside of Unity, we need to record it.
 
@@ -41,7 +41,7 @@ To show your work outside of Unity, we need to record it.
 
 ---
 
-## 4. Final Group Showcase
+## Final Group Showcase
 
 The last hour will be spent presenting our worlds to each other.
 

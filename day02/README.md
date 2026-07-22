@@ -6,12 +6,43 @@ Today we transition from a "greybox" layout to a textured, populated world. We'l
 
 ---
 
-## 1. Asset Integration: Beyond Basic Cubes
+## Adding Sound
+
+To bring your space to life, you'll need an **Audio Source**. 
+
+<img src="../images/unity-audio_source.png" width="45%" align="right" style="margin-left: 20px;" />
+
+1.  Right-click in the **Hierarchy** and select **Audio > Audio Source**.
+2.  In the Inspector, drag a sound file (like `running_water.wav`) into the **AudioClip** slot.
+3.  Set the **Spatial Blend** to **3D**. Now, the sound will grow louder as your character walks toward it.
+
+<br clear="all" />
+
+---
+
+## Adding Images & Textures
+
+Personalizing your gallery is as simple as dragging and dropping.
+
+### Images on Walls
+You can drag any image file from your **Project** window directly onto a geometric surface in the **Scene** view. Unity will automatically create a material for you.
+
+### Tiling & Textures
+Textures are tiled by default. If your image looks too small or repetitive:
+1.  Select the object.
+2.  Find the **Material** in the Inspector.
+3.  Adjust the **Tiling** values (X and Y) to scale the pattern.
+
+**Bonus: Realism with Normal Maps**
+To make your textures react to light and look 3D, look into **Normal Maps**. You can generate a normal map from any image using [NormalMap-Online](https://cpetry.github.io/NormalMap-Online/) and plug it into the **Normal Map** slot of your material in Unity.
+
+For high-quality, seamless patterns (like wood, brick, or concrete), check out [Architextures](https://architextures.org/textures).
+
+---
+
+## Asset Integration: Beyond Basic Cubes
 
 Unity supports various 3D formats, but **FBX** and **GLB/GLTF** are the most common.
-
-### Introduction to Polycam & Photogrammetry
-Photogrammetry is the process of using photos to create 3D models. We'll be using **Polycam** to capture real-world objects. For now, download the app and start thinking about objects or spaces you'd like to scan. We'll import these scans into Unity in Session 3.
 
 ### The Unity Asset Store
 The [Asset Store](https://assetstore.unity.com/) is a massive library of free and paid assets.
@@ -21,7 +52,7 @@ The [Asset Store](https://assetstore.unity.com/) is a massive library of free an
 
 ---
 
-## 2. Mastering Materials & Shaders
+## Mastering Materials & Shaders
 
 Materials define how light reacts to a surface. In URP, we primarily use the **Lit** shader.
 
@@ -36,7 +67,7 @@ To create glass or fences, change the **Surface Type** from **Opaque** to **Tran
 
 ---
 
-## 3. Lighting Design
+## Lighting Design
 
 Lighting is the most powerful tool for setting a mood.
 
@@ -48,7 +79,7 @@ Lighting is the most powerful tool for setting a mood.
 
 ---
 
-## 4. Modular Design & Prefabs
+## Modular Design & Prefabs
 
 Building a large environment piece-by-piece is slow. Instead, we use **Prefabs**.
 
@@ -63,7 +94,7 @@ Use snapping (the magnet icon) to line up modular walls or floors perfectly. Thi
 
 ---
 
-## 5. Environmental Detail
+## Environmental Detail
 
 ### Foliage & Terrain
 For natural environments, you can use Unity's **Terrain** system or simple mesh-based trees.
@@ -73,6 +104,17 @@ For natural environments, you can use Unity's **Terrain** system or simple mesh-
 Add a "mood" to your scene with basic particles.
 1. Right-click > **Effects > Particle System**.
 2. Try making a simple "dust" or "fog" effect by slowing down the speed and increasing the size of the particles.
+
+---
+
+## Photogrammetry
+
+Photogrammetry is the process of using photos to create 3D models. We use **Polycam** to capture real-world objects. For now, download the app and start thinking about objects or spaces you'd like to scan. We'll import these scans into Unity in Session 3.
+
+![Photogrammetry Diagram](../images/photogrammetry-diagram.png)
+![Photogrammetry Cameras](../images/photogrammetry-cameras.png)
+
+[Watch this Polycam video tutorial to see the process in action](https://www.youtube.com/watch?v=BImnzs-rR_k)
 
 ---
 

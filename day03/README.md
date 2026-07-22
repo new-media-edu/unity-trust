@@ -6,7 +6,7 @@ Today we transform your environment into a living, breathing world through advan
 
 ---
 
-## 1. Bringing the Real World In: Importing Scans
+## Bringing the Real World In: Importing Scans
 
 If you created photogrammetry scans with Polycam, now is the time to bring them in.
 - Export from Polycam as `.glb` or `.obj`.
@@ -15,7 +15,7 @@ If you created photogrammetry scans with Polycam, now is the time to bring them 
 
 ---
 
-## 2. Advanced Atmosphere
+## Advanced Atmosphere
 
 ### Volumetric Effects (Unity 6)
 Unity 6 introduces enhanced **Volumetric Fog and Clouds**.
@@ -28,7 +28,7 @@ Your scene automatically includes a **Global Volume**. Think of this as a cinema
 
 ---
 
-## 3. Mood & Reflection
+## Mood & Reflection
 
 ### Skyboxes
 The Skybox provides the background and the "ambient" light. 
@@ -42,7 +42,7 @@ The Skybox provides the background and the "ambient" light.
 
 ---
 
-## 4. Cinematics with Timeline & Cinemachine
+## Cinematics with Timeline & Cinemachine
 
 We’ll use **Timeline** to create a cinematic "flythrough" of your space.
 
@@ -58,7 +58,7 @@ We’ll use **Timeline** to create a cinematic "flythrough" of your space.
 
 ---
 
-## 5. Scripted Interactivity (No Coding Required)
+## Scripted Interactivity (No Coding Required)
 
 We've provided a set of scripts in `_Workshop_Assets/Scripts/` to add life to your scene.
 
@@ -79,15 +79,3 @@ Prepare your project for the final showcase.
 3. **Cinematic Cutscene:** Refine your 30-second Timeline flythrough. Focus on smooth camera transitions and interesting angles.
 
 Next session: **Post-Processing, Builds, and Showcase.**
-t onto an object in the Hierarchy and look at the Inspector to adjust the settings.
-
----
-
-## Homework: Atmosphere & Pacing
-
-Prepare your project for the final showcase.
-1. **Refine Lighting:** Dial in your mood. Use Volumetric Fog to create "God Rays" or specific atmospheric density.
-2. **Interactivity:** Add at least two scripted elements (e.g., a rotating sculpture or a triggered event) to make the space feel alive.
-3. **Cinematic Cutscene:** Refine your 30-second Timeline flythrough. Focus on smooth camera transitions and interesting angles.
-
-Next session: **Final Polish, Sound, and Export.**

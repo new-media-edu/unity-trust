@@ -32,5 +32,6 @@ Importing scans and Asset Store models, mastering URP Materials, and modular des
 ### [Day 3: Atmosphere & Cinematic Storytelling](day03/README.md)
 Advanced lighting, volumetric effects, and creating camera flythroughs with Timeline and Cinemachine.
 
-### [Day 4: Polish, Sound & Final Showcase](day04/README.md)
-Post-processing, spatial audio, and high-quality rendering for your final presentation.
+### [Day 4: Post-Processing, Builds & Final Showcase](day04/README.md)
+Post-processing, standalone builds, and exporting high-quality video for your final presentation.
+

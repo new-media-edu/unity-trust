@@ -17,7 +17,7 @@ Before we begin, download the class files we'll be using throughout the workshop
 
 ---
 
-## 1. Foundation: Project Setup
+## Foundation: Project Setup
 
 When you first open the Unity Hub, click **New Project** and select the **Universal 3D** template. This uses the **Universal Render Pipeline (URP)**, which is the industry standard for performance and high-quality visual effects.
 
@@ -29,7 +29,7 @@ Unity's interface can look complex, but you only need five main windows to build
 
 ---
 
-## 2. Creating Your First Objects
+## Creating Your First Objects
 
 Right-click in the **Hierarchy** and select **3D Object > Plane** to create a floor. Then do the same to add a **Cube** (**3D Object > Cube**).
 
@@ -45,7 +45,7 @@ Press the **Play** button at the top. You might notice the camera is looking at 
 
 ---
 
-## 3. Navigating the 3D World
+## Navigating the 3D World
 
 ### How to Move Around in Unity
 Right-click in the **Scene view** and use **WASD** to fly around like a video game. 
@@ -75,7 +75,7 @@ To manipulate objects, keep these shortcuts in mind:
 
 ---
 
-## 4. Physics in Action
+## Physics in Action
 
 ### Gravity & Physics Materials
 Add a **Sphere** and position it directly above your Cube. With the sphere selected, click **Add Component** in the Inspector and search for **Rigidbody**. To make it more interesting, select your Cube and use the **Rotate tool (E)** to tilt it slightly. Hit **Play** and watch the sphere react to gravity!
@@ -84,7 +84,7 @@ Add a **Sphere** and position it directly above your Cube. With the sphere selec
 
 ---
 
-## 5. Architectural Sketching with ProBuilder
+## Architectural Sketching with ProBuilder
 
 We’ll install **ProBuilder** together via `Window > Package Manager` (Search the Unity Registry). This tool allows you to build walls, stairs, and pedestals directly inside Unity.
 
@@ -117,7 +117,7 @@ The real power of ProBuilder is that you can manipulate individual faces, edges,
 
 ---
 
-## 6. Walking Through the Space
+## Walking Through the Space
 
 To experience your gallery as a visitor, we'll add a first-person controller.
 
@@ -136,45 +136,18 @@ Your scene might look something like this:
 
 ![Complete Scene](../images/unity-complete_scene.png)
 
-### Adding Sound
-To bring your space to life, you'll need an **Audio Source**. 
-
-<img src="../images/unity-audio_source.png" width="45%" align="right" style="margin-left: 20px;" />
-
-1.  Right-click in the **Hierarchy** and select **Audio > Audio Source**.
-2.  In the Inspector, drag a sound file (like `running_water.wav`) into the **AudioClip** slot.
-3.  Set the **Spatial Blend** to **3D**. Now, the sound will grow louder as your character walks toward it.
-
-<br clear="all" />
-
 ---
 
-## 7. Adding Images & Textures
-
-Personalizing your gallery is as simple as dragging and dropping.
-
-### Images on Walls
-You can drag any image file from your **Project** window directly onto a geometric surface in the **Scene** view. Unity will automatically create a material for you.
-
-### Tiling & Textures
-Textures are tiled by default. If your image looks too small or repetitive:
-1.  Select the object.
-2.  Find the **Material** in the Inspector.
-3.  Adjust the **Tiling** values (X and Y) to scale the pattern.
-
-**Bonus: Realism with Normal Maps**
-To make your textures react to light and look 3D, look into **Normal Maps**. You can generate a normal map from any image using [NormalMap-Online](https://cpetry.github.io/NormalMap-Online/) and plug it into the **Normal Map** slot of your material in Unity.
-
-For high-quality, seamless patterns (like wood, brick, or concrete), check out [Architextures](https://architextures.org/textures).
-
----
-
-## 8. Homework: Environment Foundations
+## Homework: Environment Foundations
 
 Your goal before the next session is to finish the core layout of your environment.
 1. **Architecture:** Use ProBuilder to finalize your floor, walls, and main focal points.
 2. **Audio:** Incorporate at least one **3D Audio Source** (e.g., ambient wind, water, or mechanical hum).
 3. **Imagery:** Import and place at least one **outside image** (JPG/PNG) on a wall or surface.
 4. **Navigation:** Ensure your First Person Controller can walk through the entire space smoothly.
+
+---
+
+## Continued Learning
 
 [Click here for some short video tutorials on ProBuilder](https://unity.com/features/probuilder)
