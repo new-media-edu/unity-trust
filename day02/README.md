@@ -36,7 +36,7 @@ Textures are tiled by default. If your image looks too small or repetitive:
 **Bonus: Realism with Normal Maps**
 To make your textures react to light and look 3D, look into **Normal Maps**. You can generate a normal map from any image using [NormalMap-Online](https://cpetry.github.io/NormalMap-Online/) and plug it into the **Normal Map** slot of your material in Unity.
 
-For high-quality, seamless patterns (like wood, brick, or concrete), check out [Architextures](https://architextures.org/textures).
+For high-quality, seamless patterns (like wood, brick, or concrete), check out [Architextures](https://architextures.org/textures). You can also find free public-domain materials on [ambientCG](https://ambientcg.com/) or explore free assets on [Poliigon](https://www.poliigon.com/textures/free) (requires a free account). Alternatively, search for free materials directly in the [Unity Asset Store (make sure they are URP-compatible)](https://assetstore.unity.com/search#q=free%20materials%20urp).
 
 ---
 
