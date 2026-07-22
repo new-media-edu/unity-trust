@@ -60,7 +60,7 @@ We’ll use **Timeline** to create a cinematic "flythrough" of your space.
 
 ## Scripted Interactivity (No Coding Required)
 
-We've provided a set of scripts in `_Workshop_Assets/Scripts/` to add life to your scene.
+The class files include a set of scripts in `_Workshop_Assets/Scripts/` to add life to your scene.
 
 - **AutoRotate.cs:** Make objects (like art pieces) spin.
 - **SimpleTrigger.cs:** Trigger an event (like a light turning on) when the player walks into a zone.

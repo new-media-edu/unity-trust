@@ -119,7 +119,7 @@ The real power of ProBuilder is that you can manipulate individual faces, edges,
 
 ## Walking Through the Space
 
-To experience your gallery as a visitor, we'll add a first-person controller. We've included one in the class files.
+To experience your gallery as a visitor, we'll add a first-person controller. There's one included in the class files.
 
 1.  **Import:** In your Project window, right-click and select **Import Package > Custom Package**, or simply drag the entire `Free Basic First Person Controller` folder from the downloaded class files (`_Workshop_Assets/Free Basic First Person Controller`) into your **Assets** folder.
 2.  **Setup:** Navigate to the `Free Basic First Person Controller` folder in your Project window and drag the **Free Basic First Person Controller.prefab** into your scene.
