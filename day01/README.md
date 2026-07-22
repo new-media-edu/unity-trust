@@ -119,16 +119,11 @@ The real power of ProBuilder is that you can manipulate individual faces, edges,
 
 ## Walking Through the Space
 
-To experience your gallery as a visitor, we'll add a first-person controller.
+To experience your gallery as a visitor, we'll add a first-person controller. We've included one in the class files.
 
-<img src="../images/unity-asset_store1.png" width="48%" align="right" style="margin-left: 20px;" />
-
-1.  **Install:** Search for the [Mini First Person Controller](https://assetstore.unity.com/packages/tools/input-management/mini-first-person-controller-174710) in the Asset Store and click **Open in Unity**.
-2.  **Import:** In the Unity Package Manager, click **Download**, then **Import**. If a window pops up asking to backup scripts, select **No**.
-3.  **Setup:** In your Project window, navigate to `Mini First Person Controller` and drag the **First Person Controller.prefab** into your scene. 
-4.  **Finalize:** **Delete the default Main Camera** in your Hierarchy, as the controller has its own camera.
-
-![Mini First Person Prefab](../images/unity-mini-first.png)
+1.  **Import:** In your Project window, right-click and select **Import Package > Custom Package**, or simply drag the entire `Free Basic First Person Controller` folder from the downloaded class files (`_Workshop_Assets/Free Basic First Person Controller`) into your **Assets** folder.
+2.  **Setup:** Navigate to the `Free Basic First Person Controller` folder in your Project window and drag the **Free Basic First Person Controller.prefab** into your scene.
+3.  **Finalize:** **Delete the default Main Camera** in your Hierarchy, as the controller has its own camera.
 
 Hit **Play**! You can now walk through your gallery using **WASD** and look around with your **Mouse**. If you need to stop or use your cursor, just hit **Escape** to get control of your mouse back.
 
