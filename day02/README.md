@@ -40,18 +40,6 @@ For high-quality, seamless patterns (like wood, brick, or concrete), check out [
 
 ---
 
-## Asset Integration: Beyond Basic Cubes
-
-Unity supports various 3D formats, but **FBX** and **GLB/GLTF** are the most common.
-
-### The Unity Asset Store
-The [Asset Store](https://assetstore.unity.com/) is a massive library of free and paid assets.
-1. Search for "Low Poly" or "Free" assets.
-2. Click **Add to My Assets**.
-3. In Unity, go to `Window > Package Manager`, select **My Assets**, and click **Download** then **Import**.
-
----
-
 ## Mastering Materials & Shaders
 
 Materials define how light reacts to a surface. In URP, we primarily use the **Lit** shader.
@@ -76,6 +64,18 @@ Lighting is the most powerful tool for setting a mood.
 - **Point Light:** A bulb that radiates in all directions.
 - **Spotlight:** A focused beam (perfect for gallery highlights).
 - **Area Light:** Soft, window-like lighting (requires "Baking").
+
+---
+
+## Asset Integration: Beyond Basic Cubes
+
+Unity supports various 3D formats, but **FBX** and **GLB/GLTF** are the most common.
+
+### The Unity Asset Store
+The [Asset Store](https://assetstore.unity.com/) is a massive library of free and paid assets.
+1. Search for "Low Poly" or "Free" assets.
+2. Click **Add to My Assets**.
+3. In Unity, go to `Window > Package Manager`, select **My Assets**, and click **Download** then **Import**.
 
 ---
 
