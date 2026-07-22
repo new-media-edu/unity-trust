@@ -128,11 +128,9 @@ Photogrammetry is the process of using photos to create 3D models. We use **Poly
 
 ---
 
-## Homework: Populating the World
+## Homework
 
-Before Session 3, continue developing the visual density of your space.
-1. **Texturing:** Finish applying custom materials to all surfaces. Ensure you are using Normal Maps for added detail.
-2. **Polycam Scans:** Use the Polycam app to scan at least 2 real-world objects. We'll import these next time.
-3. **Modularity:** Create and place at least one custom Prefab to build out your scene efficiently.
+1. **Polycam Scan:** Use Polycam to scan an object. It can be small or large, but make sure to follow the instructions and know that you might have to scan 2 or 3 things until one works out.
+2. **Environment:** Create an environment that has both an indoor and an outdoor element. It's up to you to get as creative or practical with that as you choose. Integrate a photogrammetry scanned object into your scene.
 
-Next session: We bring the mood with **Lighting** and **Cinematics**.
+Next session: Atmosphere and **Cinematics**.
