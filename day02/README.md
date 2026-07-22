@@ -27,6 +27,14 @@ Personalizing your gallery is as simple as dragging and dropping.
 ### Images on Walls
 You can drag any image file from your **Project** window directly onto a geometric surface in the **Scene** view. Unity will automatically create a material for you.
 
+Once you've applied an image, select the object and find its **Material** in the Inspector. Try these quick tweaks:
+
+- **Metallic** slider — Drag right to make the surface look like metal.
+- **Smoothness** slider — Higher = shiny/reflective, lower = matte/rough.
+- **Base Map color** — Click the color swatch next to your texture to tint it.
+- **Emission** — Check the box, pick a color, and your surface will glow.
+- **Render Face** — Change from *Front* to *Both* if your surface is see-through from one side.
+
 ### Tiling & Textures
 Textures are tiled by default. If your image looks too small or repetitive:
 1.  Select the object.
