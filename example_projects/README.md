@@ -99,3 +99,14 @@ Maclean uses virtual sets and green-screen compositing to create surreal, satura
  <a href="https://www.davidoreilly.com/everything" target="_blank">Everything - Official Site</a>
 
 ---
+
+### Pippin Barr - *v r 3: Museum of Video Game Water*
+
+*v r 3* is a series of interactive virtual galleries that explore how different games render and present water. It serves as both an archive and an artwork, cataloging various water rendering styles and techniques from across game history in a museum-like space.
+
+**Unity Focus:** Lighting, custom shaders, spatial layout and navigation
+
+ <a href="https://pippinbarr.com/v-r-3/info/" target="_blank">Museum of Video Game Water - Info Page</a> · <a href="https://pippinbarr.com/v-r-3/" target="_blank">Play Online / Project Site</a>
+
+---
+
