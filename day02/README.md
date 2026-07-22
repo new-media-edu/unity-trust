@@ -111,8 +111,8 @@ Add a "mood" to your scene with basic particles.
 
 Photogrammetry is the process of using photos to create 3D models. We use **Polycam** to capture real-world objects. For now, download the app and start thinking about objects or spaces you'd like to scan. We'll import these scans into Unity in Session 3.
 
-![Photogrammetry Diagram](../images/photogrammetry-diagram.png)
 ![Photogrammetry Cameras](../images/photogrammetry-cameras.png)
+![Photogrammetry Diagram](../images/photogrammetry-diagram.png)
 
 [Watch this Polycam video tutorial to see the process in action](https://www.youtube.com/watch?v=BImnzs-rR_k)
 
