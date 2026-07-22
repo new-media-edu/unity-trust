@@ -133,13 +133,9 @@ Your scene might look something like this:
 
 ---
 
-## Homework: Environment Foundations
+## Homework
 
-Your goal before the next session is to finish the core layout of your environment.
-1. **Architecture:** Use ProBuilder to finalize your floor, walls, and main focal points.
-2. **Audio:** Incorporate at least one **3D Audio Source** (e.g., ambient wind, water, or mechanical hum).
-3. **Imagery:** Import and place at least one **outside image** (JPG/PNG) on a wall or surface.
-4. **Navigation:** Ensure your First Person Controller can walk through the entire space smoothly.
+Expand your working 3D environment. Try modeling a building in your neighborhood or a famous piece of architecture.
 
 ---
 
