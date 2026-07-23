@@ -36,6 +36,21 @@ The Skybox provides the background and the "ambient" light.
 - In the **Environment** tab, you can swap the **Skybox Material**.
 - Pro Tip: Search for "HDRIs" to get realistic 360-degree backgrounds.
 
+### Light Baking & Emissive Materials
+Baking (pre-calculating) your lighting allows you to create realistic, soft bounced light and shadows—including glowing light from emissive materials—without impact on runtime performance.
+
+1. **Create an Emissive Material:**
+   - Select your material in the Project window.
+   - In the Inspector, check the **Emission** box.
+   - Choose a color/intensity (tint) or drag in your emissive texture.
+   - Ensure the **Global Illumination** dropdown on the material is set to **Baked**.
+2. **Mark Objects as Static:**
+   - Select any non-moving geometry (walls, floors, props, or glowing neon lights) in the Hierarchy.
+   - In the top-right of the Inspector, check the **Static** box (this flags the object to contribute to Global Illumination).
+3. **Generate the Lighting:**
+   - Go to **Window > Rendering > Lighting**.
+   - Click the **Generate Lighting** button at the bottom-right corner. Unity will calculate and bake the lightmaps in the background.
+
 ### Reflection & Light Probes
 - **Reflection Probes:** Capture the surroundings to make metallic objects look realistic.
 - **Light Probes:** Allow moving objects (like your player) to receive light from "baked" sources.
