@@ -8,7 +8,7 @@ A collection of inspiring projects that demonstrate the creative possibilities o
 
 ### Ian Cheng - *Emissaries Trilogy*
 
-<a href="https://img.youtube.com/vi/TO6Luilc4Bo/maxresdefault.jpg" target="_blank">![Emissaries</a>](https://www.youtube.com/watch?v=TO6Luilc4Bo)
+<a href="https://www.youtube.com/watch?v=TO6Luilc4Bo" target="_blank"><img src="https://img.youtube.com/vi/TO6Luilc4Bo/maxresdefault.jpg" alt="Emissaries" /></a>
 
 **<a href="https://www.youtube.com/watch?v=TO6Luilc4Bo" target="_blank"> Watch on YouTube</a>**
 
@@ -30,23 +30,13 @@ Brathwaite-Shirley builds interactive archives and game-like environments center
 
 ---
 
-### Theo Triantafyllidis - *Bug Sim* / *Feral Byte*
+### Theo Triantafyllidis - *Bug Sim* / *Feral Byte* / *Escapism* Projects
 
-Triantafyllidis creates chaotic, playful simulations where autonomous digital creatures interact through physics-driven behaviors. His works blur the line between video game, performance, and sculpture.
+Triantafyllidis creates chaotic, playful simulations where autonomous digital creatures interact through physics-driven behaviors. In his *Escapism* projects—such as the live simulation *That Feeling of Not Knowing*—he uses game engines to explore themes of isolation and the boundaries of virtual space. His works blur the line between video game, performance, and sculpture.
 
-**Unity Focus:** Soft-body physics, autonomous agent logic, custom Shader Graph
+**Unity Focus:** Soft-body physics, autonomous agent logic, custom Shader Graph, live simulation worldbuilding
 
- <a href="https://www.onassis.org/art/works/bugsim-pheromone-spa" target="_blank">Bug Sim - Onassis Foundation</a>
-
----
-
-### Patricia Piccinini - *The Meadow*
-
-Piccinini is known for hyper-realistic sculptural creatures, and *The Meadow* extends that practice into real-time 3D - bio-morphic beings that breathe, shift, and move procedurally in a virtual landscape.
-
-**Unity Focus:** Bio-morphic creature rigging, soft-body deformation, procedural movement
-
- <a href="https://www.roslynoxley9.com.au/artist/patricia-piccinini" target="_blank">Roslyn Oxley9 Gallery Archive</a>
+ <a href="https://www.onassis.org/art/works/bugsim-pheromone-spa" target="_blank">Bug Sim - Onassis Foundation</a> · <a href="https://www.youtube.com/watch?v=uv9qB2X7IOA" target="_blank">“Escapism: The Boundaries of Virtual Space” Artist Talk</a>
 
 ---
 

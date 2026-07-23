@@ -4,6 +4,11 @@
 
 Today we transition from a "greybox" layout to a textured, populated world. We'll focus on importing high-quality assets, mastering materials, and using modular design to build efficiently.
 
+> [!IMPORTANT]
+> **Before starting today's session:**
+> 1. **Install Polycam on your phone:** Download it from the <a href="https://apps.apple.com/us/app/polycam-3d-scanner-gltf/id1531533148" target="_blank">iOS App Store</a> or <a href="https://play.google.com/store/apps/details?id=ai.polycam" target="_blank">Google Play Store</a>.
+> 2. **Watch the tutorial:** Check out this <a href="https://www.youtube.com/watch?v=BImnzs-rR_k" target="_blank">Polycam video tutorial</a> to see the photogrammetry capture process in action.
+
 ---
 
 ## Adding Sound
@@ -182,12 +187,10 @@ Add a "mood" to your scene with basic particles.
 
 ## Photogrammetry
 
-Photogrammetry is the process of using photos to create 3D models. We use **Polycam** to capture real-world objects. For now, download the app and start thinking about objects or spaces you'd like to scan. We'll import these scans into Unity in Session 3.
+Photogrammetry is the process of using photos to create 3D models. We use **Polycam** to capture real-world objects. If you haven't yet, install the app on your phone (see the instructions and tutorial link at the top of this guide) and start thinking about objects or spaces you'd like to scan. We'll import these scans into Unity in Session 3.
 
 ![Photogrammetry Cameras](../images/photogrammetry-cameras.png)
 ![Photogrammetry Diagram](../images/photogrammetry-diagram.png)
-
-[Watch this Polycam video tutorial to see the process in action](https://www.youtube.com/watch?v=BImnzs-rR_k)
 
 ---
 
