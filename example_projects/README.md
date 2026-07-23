@@ -8,15 +8,15 @@ A collection of inspiring projects that demonstrate the creative possibilities o
 
 ### Ian Cheng - *Emissaries Trilogy*
 
-<a href="https://www.youtube.com/watch?v=TO6Luilc4Bo" target="_blank"><img src="https://img.youtube.com/vi/TO6Luilc4Bo/maxresdefault.jpg" alt="Emissaries" /></a>
+[![Emissaries](https://img.youtube.com/vi/TO6Luilc4Bo/maxresdefault.jpg)](https://www.youtube.com/watch?v=TO6Luilc4Bo)
 
-**<a href="https://www.youtube.com/watch?v=TO6Luilc4Bo" target="_blank"> Watch on YouTube</a>**
+**[Watch on YouTube](https://www.youtube.com/watch?v=TO6Luilc4Bo)**
 
 *Emissaries* is a trilogy of live simulations built in Unity that explore how organisms evolve cognitive abilities in unpredictable environments. Each episode features an AI-driven character navigating a world of competing forces - geological, biological, and cultural - with no predetermined outcome.
 
 **Unity Focus:** Scriptable AI agents, NavMesh navigation, non-deterministic state machines
 
- <a href="http://emissaries.live/" target="_blank">Emissaries Project Site</a> · <a href="https://carnegieart.org/exhibition/ian-cheng/" target="_blank">Carnegie Museum Video Feature</a>
+ [Emissaries Project Site](http://emissaries.live/) · [Carnegie Museum Video Feature](https://carnegieart.org/exhibition/ian-cheng/)
 
 ---
 
@@ -26,7 +26,7 @@ Brathwaite-Shirley builds interactive archives and game-like environments center
 
 **Unity Focus:** Branching interactive state machines, spatial UI, player choice mechanics
 
- <a href="https://www.serpentinegalleries.org/whats-on/danielle-brathwaite-shirley-the-delusion/" target="_blank">Serpentine Galleries - *THE DELUSION*</a> · <a href="https://circa.art/artist/danielle-brathwaite-shirley/" target="_blank">CIRCA Trans & Conditions Archive</a>
+ [Serpentine Galleries - *THE DELUSION*](https://www.serpentinegalleries.org/whats-on/danielle-brathwaite-shirley-the-delusion/) · [CIRCA Trans & Conditions Archive](https://circa.art/artist/danielle-brathwaite-shirley/)
 
 ---
 
@@ -36,7 +36,7 @@ Triantafyllidis creates chaotic, playful simulations where autonomous digital cr
 
 **Unity Focus:** Soft-body physics, autonomous agent logic, custom Shader Graph, live simulation worldbuilding
 
- <a href="https://www.onassis.org/art/works/bugsim-pheromone-spa" target="_blank">Bug Sim - Onassis Foundation</a> · <a href="https://www.youtube.com/watch?v=uv9qB2X7IOA" target="_blank">“Escapism: The Boundaries of Virtual Space” Artist Talk</a>
+ [Bug Sim - Onassis Foundation](https://www.onassis.org/art/works/bugsim-pheromone-spa) · [“Escapism: The Boundaries of Virtual Space” Artist Talk](https://www.youtube.com/watch?v=uv9qB2X7IOA)
 
 ---
 
@@ -46,7 +46,7 @@ Steensen builds immersive ecological worlds from photogrammetry scans of real we
 
 **Unity Focus:** Photogrammetry pipelines, Volumetric Fog, spatialized audio engines
 
- <a href="http://www.jakobsteensen.com/berlberl" target="_blank">Berl-Berl Project Documentation</a>
+ [Berl-Berl Project Documentation](http://www.jakobsteensen.com/berlberl)
 
 ---
 
@@ -56,7 +56,7 @@ Evans constructs multi-layered narratives that move between physical and digital
 
 **Unity Focus:** Multi-camera staging, digital avatars, physical-to-virtual set integration
 
- <a href="https://www.fraclorraine.org/en/edition/cecile-b-evans-amos-world/" target="_blank">FRAC Lorraine Project Catalog</a> · <a href="http://www.digiart21.org/art/amos-world" target="_blank">Digital Art 21 Analysis</a>
+ [FRAC Lorraine Project Catalog](https://www.fraclorraine.org/en/edition/cecile-b-evans-amos-world/) · [Digital Art 21 Analysis](http://www.digiart21.org/art/amos-world)
 
 ---
 
@@ -66,7 +66,7 @@ Lek creates feature-length CGI films and open-world simulations set in speculati
 
 **Unity Focus:** High Definition Render Pipeline (HDRP), Timeline camera sequences, spatial UI
 
- <a href="https://www.lawrencelek.com/works/geomancer" target="_blank">Lawrence Lek - *Geomancer*</a>
+ [Lawrence Lek - *Geomancer*](https://www.lawrencelek.com/works/geomancer)
 
 ---
 
@@ -76,7 +76,7 @@ Maclean uses virtual sets and green-screen compositing to create surreal, satura
 
 **Unity Focus:** Virtual set composition, green-screen compositing, post-processing volumes
 
- <a href="https://www.cosmiccatfilms.com/make-me-up" target="_blank">Cosmic Cat Films - *Make Me Up*</a>
+ [Cosmic Cat Films - *Make Me Up*](https://www.cosmiccatfilms.com/make-me-up)
 
 ---
 
@@ -86,7 +86,7 @@ Maclean uses virtual sets and green-screen compositing to create surreal, satura
 
 **Unity Focus:** Mass scene graphs, scale transitions, procedural distribution logic
 
- <a href="https://www.davidoreilly.com/everything" target="_blank">Everything - Official Site</a>
+ [Everything - Official Site](https://www.davidoreilly.com/everything)
 
 ---
 
@@ -96,7 +96,7 @@ Maclean uses virtual sets and green-screen compositing to create surreal, satura
 
 **Unity Focus:** Lighting, custom shaders, spatial layout and navigation
 
- <a href="https://pippinbarr.com/v-r-3/info/" target="_blank">Museum of Video Game Water - Info Page</a> · <a href="https://pippinbarr.com/v-r-3/" target="_blank">Play Online / Project Site</a>
+ [Museum of Video Game Water - Info Page](https://pippinbarr.com/v-r-3/info/) · [Play Online / Project Site](https://pippinbarr.com/v-r-3/)
 
 ---
 

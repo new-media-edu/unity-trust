@@ -6,8 +6,8 @@ Today we transition from a "greybox" layout to a textured, populated world. We'l
 
 > [!IMPORTANT]
 > **Before starting today's session:**
-> 1. **Install Polycam on your phone:** Download it from the <a href="https://apps.apple.com/us/app/polycam-3d-scanner-gltf/id1531533148" target="_blank">iOS App Store</a> or <a href="https://play.google.com/store/apps/details?id=ai.polycam" target="_blank">Google Play Store</a>.
-> 2. **Watch the tutorial:** Check out this <a href="https://www.youtube.com/watch?v=BImnzs-rR_k" target="_blank">Polycam video tutorial</a> to see the photogrammetry capture process in action.
+> 1. **Install Polycam on your phone:** Download it from the [iOS App Store](https://apps.apple.com/us/app/polycam-3d-scanner-gltf/id1531533148) or [Google Play Store](https://play.google.com/store/apps/details?id=ai.polycam).
+> 2. **Watch the tutorial:** Check out this [Polycam video tutorial](https://www.youtube.com/watch?v=BImnzs-rR_k) to see the photogrammetry capture process in action.
 
 ---
 
