@@ -209,6 +209,12 @@ There are some related packages that improve Unity glTFast by extending its feat
 - **KTX™ for Unity** (provides support for `KHR_texture_basisu`)
 - **meshoptimizer decompression for Unity** (provides support for `EXT_meshopt_compression`)
 
+> [!TIP]
+> **Troubleshooting: `TypeLoadException` Errors**
+> If you see `TypeLoadException: Could not load type 'GLTFast.AnimationMethod' from assembly 'glTFast'` in your console, it indicates conflicting versions of the package or stale cached assemblies. To resolve it:
+> 1. **Check for duplicate packages:** In the Package Manager, make sure you don't have both the old `com.atteneder.gltfast` (or `org.gltfast`) and the new `com.unity.cloud.gltfast` installed. If you imported an older version manually, search your project's **Assets** folder and delete any stray `glTFast` folders or DLLs.
+> 2. **Clear the cache:** Close Unity, delete the **`Library`** folder in your project's root directory (where `Assets` and `Packages` folders live), and reopen Unity. This forces Unity to cleanly rebuild all assembly cache references from scratch.
+
 ---
 
 ## Homework
