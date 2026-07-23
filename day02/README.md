@@ -192,6 +192,23 @@ Photogrammetry is the process of using photos to create 3D models. We use **Poly
 ![Photogrammetry Cameras](../images/photogrammetry-cameras.png)
 ![Photogrammetry Diagram](../images/photogrammetry-diagram.png)
 
+### Installation
+Install the Unity glTFast package using the Unity Package Manager.
+
+To install the Unity glTFast package, follow these steps:
+1. In your Unity project, go to **Window > Package Manager**.
+2. On the status bar, select the **Add (+)** button.
+3. From the Add menu, select **Add package by name...**. Name and Version fields appear.
+4. In the Name field, enter `com.unity.cloud.gltfast`.
+5. Select **Add**.
+6. The Editor installs the latest available version of the package and any dependent packages.
+
+### Optional Packages
+There are some related packages that improve Unity glTFast by extending its feature set:
+- **Draco™ 3D Data Compression Unity Package** (provides support for `KHR_draco_mesh_compression`)
+- **KTX™ for Unity** (provides support for `KHR_texture_basisu`)
+- **meshoptimizer decompression for Unity** (provides support for `EXT_meshopt_compression`)
+
 ---
 
 ## Homework
