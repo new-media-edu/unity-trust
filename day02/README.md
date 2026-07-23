@@ -197,11 +197,12 @@ Install the Unity glTFast package using the Unity Package Manager.
 
 To install the Unity glTFast package, follow these steps:
 1. In your Unity project, go to **Window > Package Manager**.
-2. On the status bar, select the **Add (+)** button.
-3. From the Add menu, select **Add package by name...**. Name and Version fields appear.
-4. In the Name field, enter `com.unity.cloud.gltfast`.
-5. Select **Add**.
-6. The Editor installs the latest available version of the package and any dependent packages.
+2. In the dropdown in the top-left of the Package Manager window, select **Packages: Unity Registry**.
+3. Search for **glTFast** (or **Unity glTFast**), select it, and click **Install**.
+4. *Alternative:* Click the **Add (+)** button, select **Add package by name...**, enter `com.unity.cloud.gltfast`, and click **Add**.
+
+> [!WARNING]
+> Do **not** use **Add package from git URL...** with the glTFast GitHub URL. Doing so installs the absolute latest development branch, which contains APIs (like `ReadOnlySpan` overloads) that are incompatible with older Unity Editors. This will result in compiler errors like `cannot convert from 'System.ReadOnlySpan<byte>' to 'byte[]'`. If you did this, remove the Git version and reinstall from the Unity Registry.
 
 ### Optional Packages
 There are some related packages that improve Unity glTFast by extending its feature set:
