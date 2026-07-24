@@ -117,31 +117,21 @@ To create glass or fences, change the **Surface Type** from **Opaque** to **Tran
 
 ---
 
-## Lighting Design
+## Lighting Teaser
 
-Lighting is the most powerful tool for setting a mood.
+Unity starts you with a single **Directional Light** (the sun). Before we do a full lighting pass in Day 03, drop one of each main light type into your scene just to see what they do.
 
-### Light Types in URP
-- **Directional Light:** Your "Sun." Controls time of day and global shadows.
-- **Point Light:** A bulb that radiates in all directions.
-- **Spotlight:** A focused beam (perfect for gallery highlights).
-- **Area Light:** Soft, window-like lighting (requires "Baking").
+Right-click in the **Hierarchy** and choose **Light >**:
 
-### Simple Tips for Better Lighting
-A few small moves make a scene look intentional instead of flat:
+- **Directional Light** - your "sun." Lights the whole scene from one angle and controls global shadows. (You already have one - try rotating it to change the time of day.)
+- **Point Light** - a bare bulb. Radiates in all directions from a single point; good for lamps, torches, or fireflies.
+- **Spot Light** - a focused cone, like a flashlight or a gallery spotlight aimed at a piece.
 
-- **Warm vs. cool.** Give lights a color instead of pure white. Warm oranges (interiors, fire, sunset) against cool blues (shadows, sky, moonlight) instantly add depth. Set the **Color** on each light in the Inspector.
-- **Turn down the sun.** A Directional Light at full **Intensity** blows everything out. Dropping it to `0.5`-`1.0` and letting smaller point/spot lights do the accent work reads far more cinematic.
-- **Adjust the Environment (ambient) light.** Open **Window > Rendering > Lighting**. The **Environment** tab controls the flat "fill" light in shadows. A dim, colored ambient keeps shadows from turning pure black.
-- **Skybox as a light source.** Your skybox actually lights the scene. Swapping to a sunset or overcast sky in the Lighting window changes the whole mood for free.
-- **Soft shadows.** On a light, set **Shadow Type** to **Soft Shadows**. Hard shadows look like a video game; soft edges look grounded.
-- **Fewer, stronger lights.** Resist scattering dozens of dim lights. One or two strong key lights plus a soft fill almost always beats a room full of weak ones - and it runs faster.
-- **Fog for atmosphere.** In the Lighting window's **Environment** tab, enable **Fog**. A subtle color-matched fog adds depth and hides where your geometry ends.
+For each one, drag it around and tweak **Color** and **Intensity** in the Inspector to see how it changes the mood.
 
-> **Bloom makes lights glow.** To get that soft glow around bright lights and emissive surfaces, add a **Global Volume** (`GameObject > Volume > Global Volume`), add a **Bloom** override, and check **Post Processing** on your Camera. See the [advanced fire guide](fire-particles-advanced.md#6-bloom-makes-it-glow) for the full steps.
+> There's a fourth type, the **Area Light**, but it only shows up with baked lighting - we'll save it for Day 03.
 
-### Going Further
-Want richer, higher-quality lighting - baked global illumination, light cookies, real lights attached to particles (like a flickering campfire that lights the room), reflections, and how the **Volume** system actually fits in? See the **[Advanced Lighting guide](lighting-advanced.md)**.
+We'll go much deeper on lighting - warm/cool color, shadows, fog, baking, and full cinematic lighting - in **[Day 03](../day03/README.md)**.
 
 ---
 
