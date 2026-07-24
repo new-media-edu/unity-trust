@@ -32,7 +32,7 @@ Brathwaite-Shirley builds interactive archives and game-like environments center
 
 ### Theo Triantafyllidis - *Bug Sim* / *Feral Byte* / *Escapism* Projects
 
-Triantafyllidis creates chaotic, playful simulations where autonomous digital creatures interact through physics-driven behaviors. In his *Escapism* projects—such as the live simulation *That Feeling of Not Knowing*—he uses game engines to explore themes of isolation and the boundaries of virtual space. His works blur the line between video game, performance, and sculpture.
+Triantafyllidis creates chaotic, playful simulations where autonomous digital creatures interact through physics-driven behaviors. In his *Escapism* projects, such as the live simulation *That Feeling of Not Knowing*, he uses game engines to explore themes of isolation and the boundaries of virtual space. His works blur the line between video game, performance, and sculpture.
 
 **Unity Focus:** Soft-body physics, autonomous agent logic, custom Shader Graph, live simulation worldbuilding
 

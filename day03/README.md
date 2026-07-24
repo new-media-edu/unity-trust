@@ -65,7 +65,7 @@ The Skybox provides the background and the "ambient" light.
 - Pro Tip: Search for "HDRIs" to get realistic 360-degree backgrounds.
 
 ### Light Baking & Emissive Materials
-Baking (pre-calculating) your lighting allows you to create realistic, soft bounced light and shadows—including glowing light from emissive materials—without impact on runtime performance.
+Baking (pre-calculating) your lighting allows you to create realistic, soft bounced light and shadows (including glowing light from emissive materials) without impact on runtime performance.
 
 1. **Create an Emissive Material:**
    - Select your material in the Project window.
