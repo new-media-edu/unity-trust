@@ -50,6 +50,26 @@ Steensen builds immersive ecological worlds from photogrammetry scans of real we
 
 ---
 
+### Rachel Rossin - *THE MAW OF*
+
+Rossin builds immersive VR and installation worlds directly in Unity, writing her own scripts alongside Maya and Cinema 4D. For *THE MAW OF*, she performed her characters in a motion-capture suit and shot scenes with a thermal-imaging camera, then wove them into a transmedia story about bodies and minds merging with technology. The piece was co-commissioned by the Whitney Museum and KW Institute for Contemporary Art, Berlin.
+
+**Unity Focus:** Real-time VR worlds, motion-capture performance, custom C# scripting, transmedia installation
+
+ [Whitney Museum - *The Maw Of*](https://whitney.org/exhibitions/the-maw-of) · [KW Institute - *THE MAW OF*](https://www.kw-berlin.de/en/exhibition-kw-on-location-rachel-rossin-the-maw-of/)
+
+---
+
+### Nancy Baker Cahill - *4th Wall* / *Mushroom Cloud*
+
+Baker Cahill makes monumental augmented-reality artworks that drop drawings and animations into real public space, all finished in Unity and delivered through her free *4th Wall* app. Her work extends the lineage of Land art toward the climate crisis, civics, and more equitable futures, letting anyone scale, rotate, and place a piece into their own environment.
+
+**Unity Focus:** Augmented reality, mobile AR pipelines, geolocated public art, environmental storytelling
+
+ [4th Wall App - Official Site](https://www.4thwallapp.org/) · [Whitney Museum - Artist Page](https://whitney.org/artists/21063)
+
+---
+
 ### Cécile B. Evans - *AMOS' WORLD*
 
 Evans constructs multi-layered narratives that move between physical and digital sets. *AMOS' WORLD* follows an AI character navigating a smart building, blending real-time rendering with cinematic storytelling.
