@@ -13,7 +13,7 @@ If you created photogrammetry scans with Polycam, now is the time to bring them 
 
 ## Lighting Design
 
-Lighting is the most powerful tool for setting a mood. In Day 02 you dropped in one of each light type to see what they do - now we'll use them intentionally.
+Lighting is the most powerful tool for setting a mood. Last session we experimented with the different light types, now we'll use them more intentionally.
 
 ### Light Types in URP
 - **Directional Light:** Your "Sun." Controls time of day and global shadows.
@@ -39,11 +39,15 @@ Want richer, higher-quality lighting - baked global illumination, light cookies,
 
 ## Advanced Atmosphere
 
-### Volumetric Effects (Unity 6)
-Unity 6 introduces enhanced **Volumetric Fog and Clouds**.
-1. Select your **Global Volume**.
-2. Add the **Fog** override. 
-3. Enable **Volumetric Fog** to see light beams (god rays) cutting through the air.
+### Fog & Atmosphere
+In **URP** (the pipeline this workshop uses), fog is not a Volume override - it lives in the Lighting window.
+1. Open `Window > Rendering > Lighting` and go to the **Environment** tab.
+2. Scroll down and enable **Fog**.
+3. Set the **Mode** (Linear or Exponential), pick a **Color** that matches your skybox, and tune the density/distance until the far edges of your scene fade softly into the haze.
+
+Color-matched fog is one of the fastest ways to add depth and hide where your geometry ends.
+
+> **Note:** True *volumetric* fog with visible light beams (god rays) is an **HDRP** feature, not URP. If you want those, that's a reason to explore HDRP later - but the Environment-tab fog above covers most gallery moods.
 
 ### Atmospheric Effects & Post-Processing
 Your scene automatically includes a **Global Volume**. Think of this as a cinematic filter for your camera. Select it in the Hierarchy, find the **Vignette** effect in the Inspector, and try increasing the **Intensity**. This darkens the edges of the screen for a focused, gallery-like feel.
@@ -51,10 +55,16 @@ Your scene automatically includes a **Global Volume**. Think of this as a cinema
 ## Mood & Reflection
 
 ### Skyboxes
-The Skybox provides the background and the "ambient" light. 
+The Skybox provides the background and the "ambient" light.
 - Go to `Window > Rendering > Lighting`.
 - In the **Environment** tab, you can swap the **Skybox Material**.
 - Pro Tip: Search for "HDRIs" to get realistic 360-degree backgrounds.
+
+**Download some skyboxes and try them.** A great free starting set is [AllSky Free - 10 Sky / Skybox Set](https://assetstore.unity.com/packages/2d/textures-materials/sky/allsky-free-10-sky-skybox-set-146014) on the Asset Store.
+1. Open the link, click **Add to My Assets**, then **Open in Unity**.
+2. In Unity's **Package Manager** (`Window > Package Manager`), find **AllSky Free** under **My Assets** and click **Download**, then **Import**.
+3. Open `Window > Rendering > Lighting`, go to the **Environment** tab, and click the small circle next to **Skybox Material** to pick one of the imported skies.
+4. Cycle through a few - a sunset, an overcast day, a night sky - and watch how the whole mood (and the ambient light) changes for free.
 
 ### Light Baking & Emissive Materials
 Baking (pre-calculating) your lighting allows you to create realistic, soft bounced light and shadows (including glowing light from emissive materials) without impact on runtime performance.
@@ -103,7 +113,7 @@ The class files include a set of scripts in `_Workshop_Assets/Scripts/` to add l
 ## Homework: Atmosphere & Pacing
 
 Prepare your project for the final showcase.
-1. **Refine Lighting & Sound:** Dial in your mood. Use Volumetric Fog for visual density and ambient wind/audio to ground the space.
+1. **Refine Lighting & Sound:** Dial in your mood. Use fog for visual density and ambient wind/audio to ground the space.
 2. **Interactivity:** Add at least two scripted elements (e.g., a rotating sculpture or a triggered event) to make the space feel alive.
 3. **Cinematic Cutscene:** Refine your 30-second Timeline flythrough. Focus on smooth camera transitions and interesting angles.
 
