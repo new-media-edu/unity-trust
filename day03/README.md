@@ -87,17 +87,25 @@ Baking (pre-calculating) your lighting allows you to create realistic, soft boun
 
 ## Cinematics with Timeline & Cinemachine
 
-We’ll use **Timeline** to create a cinematic "flythrough" of your space.
+We’ll use **Timeline** to create a cinematic "flythrough" of your space. (These steps are for **Unity 6** with **Cinemachine 3**, which is what installs from the Package Manager today.)
 
 ### Setup
-1. Install **Cinemachine** from the Package Manager.
-2. Open the **Timeline Window** (`Window > Sequencing > Timeline`).
-3. Create an empty object called "Cutscene" and drag it into the Timeline window to create a new Director component.
+1. Install **Cinemachine** from the Package Manager (`Window > Package Manager > Unity Registry`, search "Cinemachine", **Install**).
+2. Create an empty GameObject and rename it "Cutscene" (`GameObject > Create Empty`).
+3. With "Cutscene" still selected, open the Timeline window (`Window > Sequencing > Timeline`).
+4. The Timeline window shows a **Create** button. Click it, then save the Timeline asset somewhere in your project. This adds a **Playable Director** component to your Cutscene object and opens the empty timeline.
+
+![Create a Director and Timeline asset](../images/timeline-create-director.png)
 
 ### Directing the Camera
-- Add a **Cinemachine Track**.
-- Create a **Virtual Camera** (Vcam) for each shot.
-- Use the **Timeline** to blend between cameras. Unity will automatically smooth the movement between them!
+1. Add a camera for your first shot: `GameObject > Cinemachine > Cinemachine Camera`. In Cinemachine 3 these **Cinemachine Cameras** replace the old "Virtual Cameras / Vcams" - add one per shot and position each where you want that shot framed. (Adding your first one also drops a **Cinemachine Brain** onto your Main Camera automatically - that's what lets Cinemachine drive it.)
+2. In the Timeline, click the **+** (or right-click the empty track area) and choose **Unity.Cinemachine > Cinemachine Track**.
+
+![Add a Cinemachine Track](../images/timeline-cinemachine-track.png)
+
+3. Drag your **Main Camera** (the one with the Cinemachine Brain) into the track's binding slot on the left of the new track.
+4. Right-click the Cinemachine Track and choose **Add Cinemachine Shot Clip** for each shot, then drag one of your **Cinemachine Cameras** into each clip's camera field.
+5. Arrange the clips along the timeline. Where two clips overlap, Cinemachine automatically **blends** the camera between them for smooth movement. Hit **Play** on the Timeline to preview.
 
 ## Scripted Interactivity (No Coding Required)
 
