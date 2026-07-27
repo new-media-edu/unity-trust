@@ -4,16 +4,12 @@
 
 Today we transform your environment into a living, breathing world through advanced lighting and cinematic presentation.
 
----
-
 ## Bringing the Real World In: Importing Scans
 
 If you created photogrammetry scans with Polycam, now is the time to bring them in.
 - Export from Polycam as `.glb` or `.obj`.
 - Drag the file into your **Project** window.
 - **Scaling:** Scans often come in at the wrong size. Use the **Scale Factor** in the Import Settings or the Scale tool (R) to fix it.
-
----
 
 ## Lighting Design
 
@@ -41,8 +37,6 @@ A few small moves make a scene look intentional instead of flat:
 ### Going Further
 Want richer, higher-quality lighting - baked global illumination, light cookies, real lights attached to particles (like a flickering campfire that lights the room), reflections, and how the **Volume** system actually fits in? See the **[Advanced Lighting guide](lighting-advanced.md)**.
 
----
-
 ## Advanced Atmosphere
 
 ### Volumetric Effects (Unity 6)
@@ -53,8 +47,6 @@ Unity 6 introduces enhanced **Volumetric Fog and Clouds**.
 
 ### Atmospheric Effects & Post-Processing
 Your scene automatically includes a **Global Volume**. Think of this as a cinematic filter for your camera. Select it in the Hierarchy, find the **Vignette** effect in the Inspector, and try increasing the **Intensity**. This darkens the edges of the screen for a focused, gallery-like feel.
-
----
 
 ## Mood & Reflection
 
@@ -83,8 +75,6 @@ Baking (pre-calculating) your lighting allows you to create realistic, soft boun
 - **Reflection Probes:** Capture the surroundings to make metallic objects look realistic.
 - **Light Probes:** Allow moving objects (like your player) to receive light from "baked" sources.
 
----
-
 ## Cinematics with Timeline & Cinemachine
 
 We’ll use **Timeline** to create a cinematic "flythrough" of your space.
@@ -99,8 +89,6 @@ We’ll use **Timeline** to create a cinematic "flythrough" of your space.
 - Create a **Virtual Camera** (Vcam) for each shot.
 - Use the **Timeline** to blend between cameras. Unity will automatically smooth the movement between them!
 
----
-
 ## Scripted Interactivity (No Coding Required)
 
 The class files include a set of scripts in `_Workshop_Assets/Scripts/` to add life to your scene.
@@ -111,8 +99,6 @@ The class files include a set of scripts in `_Workshop_Assets/Scripts/` to add l
 - **LookAtPlayer.cs:** Make an object (like an eye or a spotlight) always face the visitor.
 
 **How to use:** Drag the script onto an object in the Hierarchy and look at the Inspector to adjust the settings.
-
----
 
 ## Homework: Atmosphere & Pacing
 

@@ -4,8 +4,6 @@ A lightweight, high-performance, modular First Person Controller built for Unity
 
 Designed to be plug-and-play, easy to customize, and asset-store ready for any 3D URP project.
 
----
-
 ## Key Features
 
 - Universal Render Pipeline (URP) Ready: Custom URP/Lit material included out of the box (no pink material errors).
@@ -22,8 +20,6 @@ Designed to be plug-and-play, easy to customize, and asset-store ready for any 3
   - Zoom: Camera FOV scroll zoom.
   - GroundCheck: Precision ground detection using physics raycasting.
   - FirstPersonAudio: Integrated 3D spatialized audio player.
-
----
 
 ## Package Folder Structure
 
@@ -44,8 +40,6 @@ Assets/Free Basic First Person Controller/
 │       └── Zoom.cs
 └── Free Basic First Person Controller.prefab  # Controller prefab
 ```
-
----
 
 ## Quick Start Guide
 
@@ -89,8 +83,6 @@ set in the host project.
 | Crouch | Left Ctrl / C | Button East (B / Circle) |
 | Zoom | Mouse Scroll Wheel | — |
 
----
-
 ## Component Overview
 
 ### FirstPersonMovement
@@ -124,8 +116,6 @@ Applies upward impulse force when grounded.
 ### FirstPersonAudio
 Manages movement footstep loops and event-driven SFX (jump, land, crouch).
 - Automatically handles looping step and running audio based on horizontal Rigidbody velocity.
-
----
 
 ## License & Asset Store Information
 

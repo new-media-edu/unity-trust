@@ -34,4 +34,3 @@ Advanced lighting, volumetric effects, and creating camera flythroughs with Time
 
 ### [Day 4: Post-Processing, Builds & Final Showcase](day04/README.md)
 Post-processing, standalone builds, and exporting high-quality video for your final presentation.
-

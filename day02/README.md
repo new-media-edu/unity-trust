@@ -9,8 +9,6 @@ Today we transition from a "greybox" layout to a textured, populated world. We'l
 > 1. **Install Polycam on your phone:** Download it from the [iOS App Store](https://apps.apple.com/us/app/polycam-3d-scanner-gltf/id1531533148) or [Google Play Store](https://play.google.com/store/apps/details?id=ai.polycam).
 > 2. **Watch the tutorial:** Check out this [Polycam video tutorial](https://www.youtube.com/watch?v=BImnzs-rR_k) to see the photogrammetry capture process in action.
 
----
-
 ## Adding Sound
 
 To bring your space to life, you'll need an **Audio Source**. 
@@ -22,8 +20,6 @@ To bring your space to life, you'll need an **Audio Source**.
 3.  Set the **Spatial Blend** to **3D**. Now, the sound will grow louder as your character walks toward it.
 
 <br clear="all" />
-
----
 
 ## Making Fire (Particle Systems)
 
@@ -70,8 +66,6 @@ That magenta means the material isn't rendering. Open the **Renderer** module at
 
 > **Want it to actually look hot?** A flat orange cone is a fine start. To push it into glowing, flickering, smoke-trailing fire, see **[Advanced Fire](fire-particles-advanced.md)**.
 
----
-
 ## Adding Images & Textures
 
 Personalizing your gallery is as simple as dragging and dropping.
@@ -100,8 +94,6 @@ For high-quality, seamless patterns (like wood, brick, or concrete), check out [
 
 ![Browsing Online Textures](../images/texture-browsing.png)
 
----
-
 ## Mastering Materials & Shaders
 
 Materials define how light reacts to a surface. In URP, we primarily use the **Lit** shader.
@@ -114,8 +106,6 @@ Materials define how light reacts to a surface. In URP, we primarily use the **L
 
 ### Transparency & Alpha
 To create glass or fences, change the **Surface Type** from **Opaque** to **Transparent**. You can then adjust the **Alpha** channel of the Base Map color.
-
----
 
 ## Lighting Teaser
 
@@ -133,8 +123,6 @@ For each one, drag it around and tweak **Color** and **Intensity** in the Inspec
 
 We'll go much deeper on lighting - warm/cool color, shadows, fog, baking, and full cinematic lighting - in **[Day 03](../day03/README.md)**.
 
----
-
 ## Asset Integration: Beyond Basic Cubes
 
 Unity supports various 3D formats, but **FBX** and **GLB/GLTF** are the most common.
@@ -144,8 +132,6 @@ The [Asset Store](https://assetstore.unity.com/) is a massive library of free an
 1. Search for "Low Poly" or "Free" assets.
 2. Click **Add to My Assets**.
 3. In Unity, go to `Window > Package Manager`, select **My Assets**, and click **Download** then **Import**.
-
----
 
 ## Modular Design & Prefabs
 
@@ -160,8 +146,6 @@ Building a large environment piece-by-piece is slow. Instead, we use **Prefabs**
 ### Modular Workflows
 Use snapping (the magnet icon) to line up modular walls or floors perfectly. This is how professional game levels are built.
 
----
-
 ## Environmental Detail
 
 ### Foliage & Terrain
@@ -172,8 +156,6 @@ For natural environments, you can use Unity's **Terrain** system or simple mesh-
 Add a "mood" to your scene with basic particles.
 1. Right-click > **Effects > Particle System**.
 2. Try making a simple "dust" or "fog" effect by slowing down the speed and increasing the size of the particles.
-
----
 
 ## Photogrammetry
 
@@ -205,8 +187,6 @@ There are some related packages that improve Unity glTFast by extending its feat
 > If you see `TypeLoadException: Could not load type 'GLTFast.AnimationMethod' from assembly 'glTFast'` in your console, it indicates conflicting versions of the package or stale cached assemblies. To resolve it:
 > 1. **Check for duplicate packages:** In the Package Manager, make sure you don't have both the old `com.atteneder.gltfast` (or `org.gltfast`) and the new `com.unity.cloud.gltfast` installed. If you imported an older version manually, search your project's **Assets** folder and delete any stray `glTFast` folders or DLLs.
 > 2. **Clear the cache:** Close Unity, delete the **`Library`** folder in your project's root directory (where `Assets` and `Packages` folders live), and reopen Unity. This forces Unity to cleanly rebuild all assembly cache references from scratch.
-
----
 
 ## Homework
 

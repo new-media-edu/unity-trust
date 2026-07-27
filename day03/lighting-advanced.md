@@ -4,8 +4,6 @@ The [basic lighting tips](README.md#simple-tips-for-better-lighting) get you a s
 
 Everything here assumes the workshop's **URP** project.
 
----
-
 ## First: what a "Volume" actually is
 
 You'll hear "add a Volume" a lot. In URP, a **Volume** is *not* a light and it is *not* volumetric fog. It's a container for **post-processing overrides** - screen-wide image effects applied after the scene is rendered:
@@ -18,8 +16,6 @@ You'll hear "add a Volume" a lot. In URP, a **Volume** is *not* a light and it i
 Setup: `GameObject > Volume > Global Volume`, create a new **Profile**, then **Add Override** for each effect. Check **Post Processing** on your Camera, and confirm **HDR** is on in the URP Asset.
 
 > A **Global Volume** affects the whole scene. A **local** Volume (Box Collider set to *Is Trigger* + a Volume component with **Mode: Local**) only applies when the camera enters it - great for making one room feel colder or more saturated than the rest.
-
----
 
 ## "Particle-based" lighting (a fire that lights the room)
 
@@ -36,8 +32,6 @@ On the Particle System, enable the **Lights** module. Assign a light **prefab**,
 
 For almost every workshop scene, **Option A is the right call.** Reach for the Lights module only when a single light genuinely can't capture the effect.
 
----
-
 ## Baked Lighting (Global Illumination)
 
 Real-time lights don't bounce - light hits a surface and stops. **Baking** pre-computes soft, bounced light (color bleeding, soft ambient occlusion, gentle shadows) into textures called **lightmaps**. It's the single biggest jump in realism for static scenes, and it's basically free at runtime because it's pre-calculated.
@@ -48,8 +42,6 @@ Real-time lights don't bounce - light hits a surface and stops. **Baking** pre-c
 
 Baking takes time and only works for things that don't move. Keep moving objects (the player, doors) on **Realtime** lights or use Light Probes below.
 
----
-
 ## Light Probes (baked light for moving objects)
 
 Baked lightmaps only cover static geometry, so a moving character walking through a baked scene looks disconnected - flatly lit, ignoring the warm glow around it. **Light Probes** fix that: they sample the baked lighting at points in space and blend it onto dynamic objects.
@@ -58,16 +50,12 @@ Baked lightmaps only cover static geometry, so a moving character walking throug
 - Position probes through the volume the player can walk - denser where lighting changes sharply (doorways, near colored lights).
 - Re-bake (**Generate Lighting**). Moving objects now pick up the room's color and brightness.
 
----
-
 ## Reflection Probes (local reflections)
 
 Smooth/metallic materials reflect the skybox by default, which looks wrong indoors. A **Reflection Probe** captures the actual surroundings so reflections match the room.
 
 - `GameObject > Light > Reflection Probe`, place it at the center of a room.
 - Set **Type: Baked** and bake, or **Realtime** for reflective surfaces that must update live (pricier).
-
----
 
 ## Light Cookies (shape and texture your light)
 
@@ -76,15 +64,11 @@ A **cookie** is a texture mask on a light - like a gobo/stencil in theater. It's
 - Import a grayscale texture, set its **Texture Type** appropriately, and drop it in the light's **Cookie** slot.
 - Works on Spotlights (a mask over the cone) and Directional Lights (a tiling pattern over the whole scene - great for fake tree shadows).
 
----
-
 ## Fog and "volumetric" light
 
 Plain **fog** (Lighting window > **Environment** > enable **Fog**, choose color/density) adds depth cheaply and is covered in the basic tips.
 
 True **volumetric lighting** - visible god-ray shafts and light scattering through fog - is **not built into URP** (it's a native HDRP feature). To get it in URP you need a third-party asset (e.g. a volumetric lighting/fog package from the Asset Store) or a custom **Renderer Feature**. Don't chase this unless a scene truly calls for it; a good fog color plus Bloom fakes most of the impression.
-
----
 
 ## A sensible order of operations
 

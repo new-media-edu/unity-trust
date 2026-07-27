@@ -4,8 +4,6 @@
 
 Welcome to your first steps in Unity. Today, we're moving from a blank slate to a walkable 3D gallery. We'll focus on the interface, basic physics, and building custom architecture.
 
----
-
 ##  Download Class Files
 
 Before we begin, download the class files we'll be using throughout the workshop:
@@ -15,19 +13,13 @@ Before we begin, download the class files we'll be using throughout the workshop
 > [!NOTE]
 > These files may be updated between sessions. If you're told to re-download, simply grab the latest `.zip` from the link above and replace your old copy - you can safely delete the previous download.
 
----
-
 ## Foundation: Project Setup
 
 When you first open the Unity Hub, click **New Project** and select the **Universal 3D** template. This uses the **Universal Render Pipeline (URP)**, which is the industry standard for performance and high-quality visual effects.
 
----
-
 Unity's interface can look complex, but you only need five main windows to build your world: **Hierarchy**, **Project**, **Scene**, **Game**, and **Inspector**.
 
 ![Unity Views](../images/unity-views.png)
-
----
 
 ## Creating Your First Objects
 
@@ -42,8 +34,6 @@ Press the **Play** button at the top. You might notice the camera is looking at 
 2.  In the **Scene view**, fly to a position where you like the view of your objects.
 3.  Select the **Main Camera** in the Hierarchy.
 4.  Press **Shift + Cmd + F** (Mac) or **Shift + Ctrl + F** (Windows) to **Align with View**.
-
----
 
 ## Navigating the 3D World
 
@@ -73,16 +63,12 @@ To manipulate objects, keep these shortcuts in mind:
 
 > **Deep Dive:** [Explore the Unity Editor](https://learn.unity.com/tutorial/explore-the-unity-editor-1?version=2021.3)
 
----
-
 ## Physics in Action
 
 ### Gravity & Physics Materials
 Add a **Sphere** and position it directly above your Cube. With the sphere selected, click **Add Component** in the Inspector and search for **Rigidbody**. To make it more interesting, select your Cube and use the **Rotate tool (E)** to tilt it slightly. Hit **Play** and watch the sphere react to gravity!
 
 *Tip: Try creating a **Physics Material** (Right-click in Project view > Create > Physics Material) to add bounciness or adjust friction, then apply it to your Sphere's Collider!*
-
----
 
 ## Architectural Sketching with ProBuilder
 
@@ -115,8 +101,6 @@ The real power of ProBuilder is that you can manipulate individual faces, edges,
 
 <img src="../images/unity-probuilder-inset1.png" width="48%" /> <img src="../images/unity-probuilder-inset2.png" width="48%" />
 
----
-
 ## Walking Through the Space
 
 To experience your gallery as a visitor, we'll add a first-person controller. There's one included in the class files.
@@ -131,13 +115,9 @@ Your scene might look something like this:
 
 ![Complete Scene](../images/unity-complete_scene.png)
 
----
-
 ## Homework
 
 Expand your working 3D environment. Try modeling a building in your neighborhood or a famous piece of architecture.
-
----
 
 ## Continued Learning
 

@@ -4,12 +4,8 @@
 **Duration:** 4 Days (2.5 hours per session)  
 **Total Time:** 10 Hours
 
----
-
 ## Overview
 This workshop is an intensive dive into real-time 3D creation using Unity 6 (a real-time 3D engine used widely in games, art, and architecture). No previous experience with Unity is required. In this no-code workshop students will learn how to create and inhabit virtual environments, focusing on environmental design, lighting, physics, and spatial audio.
-
----
 
 ## Schedule
 
@@ -47,8 +43,6 @@ This workshop is an intensive dive into real-time 3D creation using Unity 6 (a r
 - **Rendering & Capture:** Using Unity Recorder to export high-quality video.
 - **Final Group Review:** Showcase presentations and peer feedback.
 - **Beyond the Workshop:** Packaging builds and next steps in the Unity ecosystem.
-
----
 
 ## Skills Gained
 - Design and build 3D environments in Unity 6.
