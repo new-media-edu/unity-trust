@@ -98,14 +98,23 @@ We’ll use **Timeline** to create a cinematic "flythrough" of your space. (Thes
 ![Create a Director and Timeline asset](../images/timeline-create-director.png)
 
 ### Directing the Camera
-1. Add a camera for your first shot: `GameObject > Cinemachine > Cinemachine Camera`.
-2. In the Timeline, click the **+** (or right-click the empty track area) and choose **Unity.Cinemachine > Cinemachine Track**.
+
+First, give the flythrough its own camera so it doesn't fight your first-person player:
+1. Select the **Camera** nested under your First Person Controller. In the Inspector, find the **Cinemachine Brain** component, click the **⋮** menu at its top-right, and choose **Remove Component**. (Your FPS movement doesn't need it - the controller moves that camera directly.)
+2. Create a dedicated camera: `GameObject > Camera`, and rename it "Cutscene Camera".
+3. With **Cutscene Camera** selected, click **Add Component** in the Inspector and add a **Cinemachine Brain**. This camera is now the one Cinemachine drives.
+
+Now build the shots:
+4. Add a camera for your first shot: `GameObject > Cinemachine > Cinemachine Camera`. Move/rotate it in the Scene view to frame the shot you want.
+5. In the Timeline, click the **+** (or right-click the empty track area) and choose **Unity.Cinemachine > Cinemachine Track**.
 
 ![Add a Cinemachine Track](../images/timeline-cinemachine-track.png)
 
-3. Bind the track to your camera. On the left edge of the new Cinemachine Track is a field that reads **`None (Cinemachine Brain)`**. Click the small circle/target icon on the right of that field. The list only shows cameras that have a **Cinemachine Brain** - in a first-person scene that's your **player's camera** (the Camera object nested under your First Person Controller), so pick that one. The field should now read that camera's name followed by **`(Cinemachine Brain)`**.
-4. Add a shot for each camera. The easiest way: drag a **Cinemachine Camera** from the Hierarchy straight onto the Cinemachine Track - Unity creates a shot clip already pointed at it. (Alternatively, right-click the track, choose **Add Cinemachine Shot Clip**, click the new clip, and in the **Inspector** set its **Cinemachine Camera** field to one of your cameras.) Repeat for each shot.
-5. Arrange the clips along the timeline. Where two clips overlap, Cinemachine automatically **blends** the camera between them for smooth movement. Hit **Play** on the Timeline to preview.
+6. Bind the track to your camera. On the left edge of the new Cinemachine Track is a field that reads **`None (Cinemachine Brain)`**. Click the small circle/target icon on the right of that field and pick your **Cutscene Camera** (now the only one with a Brain). The field should read **`Cutscene Camera (Cinemachine Brain)`**.
+7. Add a shot for each camera. The easiest way: drag a **Cinemachine Camera** from the Hierarchy straight onto the Cinemachine Track - Unity creates a shot clip already pointed at it. (Alternatively, right-click the track, choose **Add Cinemachine Shot Clip**, click the new clip, and in the **Inspector** set its **Cinemachine Camera** field to one of your cameras.) Repeat for each shot.
+8. Arrange the clips along the timeline. Where two clips overlap, Cinemachine automatically **blends** the camera between them for smooth movement. Hit **Play** on the Timeline to preview.
+
+> **Which camera shows up?** With two cameras in the scene, Unity renders the one with the higher **Depth** (on the Camera component). While building your flythrough, set the **Cutscene Camera** to a higher Depth (e.g. `1` vs the player's `0`), or just uncheck the player camera, so the Game view shows the cutscene. For a playable intro that hands control back to the player, disable the First Person Controller while the timeline plays and re-enable it at the end (an **Activation Track** in the Timeline can do this without code).
 
 ## Scripted Interactivity (No Coding Required)
 
