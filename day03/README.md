@@ -103,8 +103,8 @@ We’ll use **Timeline** to create a cinematic "flythrough" of your space. (Thes
 
 ![Add a Cinemachine Track](../images/timeline-cinemachine-track.png)
 
-3. Drag your **Main Camera** (the one with the Cinemachine Brain) into the track's binding slot on the left of the new track.
-4. Right-click the Cinemachine Track and choose **Add Cinemachine Shot Clip** for each shot, then drag one of your **Cinemachine Cameras** into each clip's camera field.
+3. Bind the track to your camera. On the left edge of the new Cinemachine Track is a field that reads **`None (Cinemachine Brain)`**. Click the small circle/target icon on the right of that field and pick your **Main Camera** from the list (or just drag the Main Camera from the Hierarchy directly onto that field). The field should now read **`Main Camera (Cinemachine Brain)`**.
+4. Add a shot for each camera. The easiest way: drag a **Cinemachine Camera** from the Hierarchy straight onto the Cinemachine Track - Unity creates a shot clip already pointed at it. (Alternatively, right-click the track, choose **Add Cinemachine Shot Clip**, click the new clip, and in the **Inspector** set its **Cinemachine Camera** field to one of your cameras.) Repeat for each shot.
 5. Arrange the clips along the timeline. Where two clips overlap, Cinemachine automatically **blends** the camera between them for smooth movement. Hit **Play** on the Timeline to preview.
 
 ## Scripted Interactivity (No Coding Required)
