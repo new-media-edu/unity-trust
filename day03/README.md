@@ -87,7 +87,11 @@ Baking (pre-calculating) your lighting allows you to create realistic, soft boun
 
 ## Cinematics with Timeline & Cinemachine
 
-We’ll use **Timeline** to create a cinematic "flythrough" of your space. (These steps are for **Unity 6** with **Cinemachine 3**, which is what installs from the Package Manager today.)
+We’ll use **Cinemachine** together with **Timeline** to create a cinematic "flythrough" of your space.
+
+**What Cinemachine does:** instead of hand-animating a single camera, you place a bunch of lightweight **Cinemachine Cameras** around your scene - each one is just a *shot*, a saved viewpoint (position, angle, zoom). None of them render on their own; a single real camera (the one with the **Cinemachine Brain**) follows whichever Cinemachine Camera is currently "live." **Timeline** is where you decide the order and timing of those shots, and Cinemachine automatically **animates the camera between them** - so overlapping two shots gives you a smooth flythrough with no keyframing. Cinemachine can do a lot more (cameras that follow or orbit a target, handheld shake, collision avoidance), but shot-to-shot blending is all we need here.
+
+(These steps are for **Unity 6** with **Cinemachine 3**, which is what installs from the Package Manager today.)
 
 ### Setup
 1. Install **Cinemachine** from the Package Manager (`Window > Package Manager > Unity Registry`, search "Cinemachine", **Install**).
@@ -104,15 +108,24 @@ First, give the flythrough its own camera so it doesn't fight your first-person 
 2. Create a dedicated camera: `GameObject > Camera`, and rename it "Cutscene Camera".
 3. With **Cutscene Camera** selected, click **Add Component** in the Inspector and add a **Cinemachine Brain**. This camera is now the one Cinemachine drives.
 
-Now build the shots:
-4. Add a camera for your first shot: `GameObject > Cinemachine > Cinemachine Camera`. Move/rotate it in the Scene view to frame the shot you want.
-5. In the Timeline, click the **+** (or right-click the empty track area) and choose **Unity.Cinemachine > Cinemachine Track**.
+Now build the shots. **One Cinemachine Camera = one camera angle. All of them go on a single Cinemachine Track.**
+
+4. Create one **Cinemachine Camera** per shot: `GameObject > Cinemachine > Cinemachine Camera`. Rename each so you can tell them apart ("front stair view", "rear stair view", ...) and move/rotate each in the Scene view to frame that shot. The blue camera gizmo shows what it sees.
+
+![Cinemachine Cameras placed in the scene](../images/timeline-cinemachine-cameras.png)
+
+5. In the Timeline, click **+ > Unity.Cinemachine > Cinemachine Track**. **Do this exactly once** - a single track holds every shot.
 
 ![Add a Cinemachine Track](../images/timeline-cinemachine-track.png)
 
-6. Bind the track to your camera. On the left edge of the new Cinemachine Track is a field that reads **`None (Cinemachine Brain)`**. Click the small circle/target icon on the right of that field and pick your **Cutscene Camera** (now the only one with a Brain). The field should read **`Cutscene Camera (Cinemachine Brain)`**.
-7. Add a shot for each camera. The easiest way: drag a **Cinemachine Camera** from the Hierarchy straight onto the Cinemachine Track - Unity creates a shot clip already pointed at it. (Alternatively, right-click the track, choose **Add Cinemachine Shot Clip**, click the new clip, and in the **Inspector** set its **Cinemachine Camera** field to one of your cameras.) Repeat for each shot.
-8. Arrange the clips along the timeline. Where two clips overlap, Cinemachine automatically **blends** the camera between them for smooth movement. Hit **Play** on the Timeline to preview.
+6. Bind the track. On the left edge of the track is a field reading **`None (Cinemachine Brain)`**. Click the target icon on its right and pick your **Cutscene Camera** (the one with the Brain). It should now read **`Cutscene Camera (Cinemachine Brain)`**.
+7. Add your shots **onto that same track**: drag each Cinemachine Camera from the Hierarchy and drop it **directly on the Cinemachine Track**, one after another. Each drop becomes a shot clip aimed at that camera.
+   - ⚠️ Drop them **on the track row itself**, not in the empty grey area below it. Dropping into empty space creates a **second track**, and two Cinemachine tracks fight over the same camera (this is why nothing plays right). You want **all clips on one track**.
+8. Line the clips up left-to-right, with the first one starting at frame **0**. To blend from one shot to the next, drag a clip so its edge **overlaps** the neighbor - the crossed/hatched overlap is the blend, and Cinemachine smoothly flies the camera between the two angles there.
+
+![Two shots on one track with a blend where they overlap](../images/timeline-shot-clips-blend.png)
+
+9. **Preview it:** press the **▶ play button inside the Timeline window** (top-left, next to "Preview") and watch the **Game** tab - that's where the flythrough renders, not the Scene tab. To make it play when you press the main editor Play button instead, select your timeline object and check **Play On Awake** on its **Playable Director** component.
 
 > **Which camera shows up?** With two cameras in the scene, Unity renders the one with the higher **Depth** (on the Camera component). While building your flythrough, set the **Cutscene Camera** to a higher Depth (e.g. `1` vs the player's `0`), or just uncheck the player camera, so the Game view shows the cutscene. For a playable intro that hands control back to the player, disable the First Person Controller while the timeline plays and re-enable it at the end (an **Activation Track** in the Timeline can do this without code).
 
