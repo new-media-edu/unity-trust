@@ -2,7 +2,18 @@
 
 **Session Time:** 2.5 Hours
 
-The final session is about that last 10% of polish that makes a project feel professional. We'll add a cinematic look, create standalone playable files, and showcase our work.
+The final session is about that last 10% of polish that makes a project feel professional. We'll add life and interaction, a cinematic look, standalone playable files, and showcase our work.
+
+## Scripted Interactivity (No Coding Required)
+
+The class files include a set of scripts in `_Workshop_Assets/Scripts/` to add life to your scene.
+
+- **AutoRotate.cs:** Make objects (like art pieces) spin.
+- **SimpleTrigger.cs:** Trigger an event (like a light turning on) when the player walks into a zone.
+- **AudioCrossfader.cs:** Smoothly switch between music tracks as you enter different rooms.
+- **LookAtPlayer.cs:** Make an object (like an eye or a spotlight) always face the visitor.
+
+**How to use:** Drag the script onto an object in the Hierarchy and look at the Inspector to adjust the settings.
 
 ## Post-Processing Mastery
 
@@ -31,7 +42,7 @@ To show your work outside of Unity, we need to record it.
 1. Install **Unity Recorder** from the Package Manager.
 2. Open `Window > General > Recorder > Recorder Window`.
 3. Select **Movie** and choose your resolution (e.g., 1080p or 4K).
-4. Connect it to your **Timeline** so it records perfectly as the cinematic plays.
+4. Set the **Recording Mode**. If your camera move is a Timeline, connect the Recorder to it so it records exactly as the cinematic plays. If you keyframed your camera in the Animation window, just record for the number of seconds your clip runs.
 
 ## Final Group Showcase
 
@@ -45,9 +56,10 @@ The last hour will be spent presenting our worlds to each other.
 ## Final Homework: Deployment & Sharing
 
 Now that your environment is built, take it further:
-1. **Recording:** Render a high-quality (1080p or 4K) version of your flythrough using Unity Recorder.
-2. **Standalone Build:** Attempt to "Build" your project for Mac or Windows to share it as a playable file.
-3. **Documentation:** Write a short artist statement or description for your portfolio, explaining the concept behind your virtual environment.
+1. **Interactivity:** Add at least two scripted elements (a rotating sculpture, a triggered light) to make the space feel alive.
+2. **Recording:** Render a high-quality (1080p or 4K) version of your flythrough using Unity Recorder.
+3. **Standalone Build:** Attempt to "Build" your project for Mac or Windows to share it as a playable file.
+4. **Documentation:** Write a short artist statement or description for your portfolio, explaining the concept behind your virtual environment.
 
 ## Beyond the Workshop
 
