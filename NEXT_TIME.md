@@ -74,6 +74,42 @@ That's one coherent sequence about presentation rather than three disconnected t
 - Day 4 gets tight. Post plus Cinemachine plus Recorder plus a showcase in 2.5 hours is a lot. Standalone builds may need to be cut down to a 10 minute demo, or moved to written instructions people follow at home.
 - The Day 3 assignment needs rewriting. "Create a 30-second cinematic flythrough" no longer works there. Replace it with something lighting and mood focused, for example: light your world for two different times of day and save a screenshot of each.
 
+## 4. Drop Cinemachine, animate the camera with the Animation window
+
+Related to #3. When camera work moves to Day 4, it should also get simpler.
+
+**The problem:** Cinemachine has a lot of setup surface for what we actually use it for, which is "fly the camera along a path and look at things." The Day 3 walkthrough currently has to explain, and troubleshoot, all of this:
+
+- Installing the package.
+- Creating a separate cutscene camera, because the first person controller's camera can't also be the Cinemachine camera.
+- Removing the Cinemachine Brain from the player camera and adding it to the cutscene camera.
+- Binding the Cinemachine Track to the Brain.
+- The single-track rule, because dropping a shot into empty space silently creates a second track and two tracks fight over the same Brain. This is the number one thing that breaks in class.
+- Camera **Depth** ordering, so the right camera actually renders in the Game view.
+
+That is a lot of concepts and a lot of failure modes for a no-code workshop, and none of them are about the thing students care about, which is what the shot looks like.
+
+**The fix:** Use the **Animation** window instead. Keyframe the camera's position and rotation directly, exactly the same way we already keyframe a spinning sculpture or a rising platform.
+
+**Why this is better for this class:**
+- **It's already taught.** Day 3 has a Basic Animation section that keyframes position and rotation on a cube. The camera becomes one more object you animate. Zero new concepts, and it retroactively makes the animation lesson feel more important.
+- **One camera, no brain, no binding, no track rules.** Select the camera, hit record, move the playhead, move the camera. That's the whole workflow.
+- **Direct control over the shot.** With Cinemachine, students place shots and hope the blend between them looks good. With keyframes, they see and adjust the actual path. When a move feels wrong, the fix is dragging a keyframe, not tuning a blend curve on a clip overlap.
+- **Debuggable.** When a keyframed camera does something weird, you can see why. When a Cinemachine blend does something weird, you're explaining Brains and track binding.
+
+**What we lose, and whether it matters:**
+- Automatic smooth blending between shots. Mostly fine. An animated camera moving continuously is arguably the better look for a micro world anyway, closer to a macro lens drifting over a specimen than to an edited film with cuts.
+- Hard cuts between angles. Still doable: keyframe the camera to jump, or set the tangents to constant. Worth showing as a one minute aside.
+- Follow/orbit/look-at behavior. This is the real loss. If somebody wants a camera orbiting a centerpiece, hand-keyframing an orbit is tedious. Options: parent the camera to an empty at the world's center and animate the **empty's** Y rotation, which gives a perfect orbit with two keyframes. That trick is worth teaching regardless and covers most of what people will actually ask for.
+
+**Does Timeline stay?** Probably yes, but as an optional layer rather than a requirement. Once the camera is an animated object, Timeline's job is just sequencing (start the camera move, then trigger a light change, then fade audio) via an Animation Track. If time is short on Day 4, cut Timeline entirely and let the Animator play the camera clip on its own. The flythrough works fine without it.
+
+**To do before next run:**
+- Rewrite the Day 3 Cinemachine section as a Day 4 "Animating the Camera" section.
+- Test the parent-empty orbit trick in Unity 6 and screenshot it.
+- Confirm Unity Recorder captures an Animator-driven camera cleanly without Timeline. It should, but verify before promising it.
+- Delete or archive the Cinemachine screenshots in `images/` once the section is gone.
+
 ## Other notes and open questions
 
 - Confirm whether Polycam scans still make sense under the micro world theme. They probably do, and arguably get better: scanning small real objects (a rock, a plant, a piece of trash) and dropping them in at world scale is exactly the right gesture. Consider explicitly reframing the Day 2 Polycam assignment as "scan a small object and make it a landmark."
