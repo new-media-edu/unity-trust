@@ -19,6 +19,12 @@ These scripts are designed for easy, drag-and-drop behavior. Here is how to asse
 *   **Settings:** Drag both child Audio Sources into the script's `Source A` and `Source B` slots. 
 *   **Effect:** Source A plays when you are standing right on the object; Source B takes over as you walk away. Perfect for ambient transitions.
 
-### 5. Standard Gallery Plinths
+### 5. Camera Recorder (SceneRecorder)
+*   **Assembly:** Drag `SceneRecorder.cs` onto any **Camera**. That's it.
+*   **Usage:** Press **Play**, then **F9** for a still image and **F10** to start/stop recording video. A red **● REC** dot shows while it's running.
+*   **Output:** Files appear in a `Recordings` folder next to your `Assets` folder. Set **Width**/**Height** in the Inspector to record at a proper resolution regardless of your Game view size.
+*   **Formats:** **Video** gives you a finished `.mp4` (Editor only). **Png Sequence** gives you numbered frames plus an `ffmpeg` command in the Console for stitching them together. No audio either way.
+
+### 6. Standard Gallery Plinths
 *   **Assembly:** Use **ProBuilder** to create a cube. Set its dimensions in the Inspector to standard gallery sizes (0.4m x 0.4m x 1.0m). 
 *   **Tip:** Once you have one, drag it from the Hierarchy into your Project folder to create a reusable **Prefab**.

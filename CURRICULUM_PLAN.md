@@ -38,12 +38,11 @@ This workshop is an intensive dive into real-time 3D creation using Unity 6 (a r
 - **Animation & Camera Movement:** Keyframing objects and cameras; optional Timeline/Cinemachine flythroughs.
 - **Assignment:** Create a 30-second cinematic flythrough with integrated spatial audio.
 
-### Day 4: Post-Processing, Builds & Final Showcase
-**Focus:** Polish, Deployment, and Presentation.
+### Day 4: Interactivity, Builds & Final Showcase
+**Focus:** Interaction, Deployment, and Presentation.
 - **Scripted Interactivity:** Using provided scripts for triggers, rotations, and audio fades.
-- **Post-Processing Mastery:** Color Grading, Bloom, Motion Blur, and Film Grain.
 - **Standalone Builds:** Exporting your project as a playable `.exe` or `.app`.
-- **Rendering & Capture:** Using Unity Recorder to export high-quality video.
+- **Rendering & Capture:** Exporting high-quality stills and video with the SceneRecorder script or Unity Recorder.
 - **Final Group Review:** Showcase presentations and peer feedback.
 - **Beyond the Workshop:** Packaging builds and next steps in the Unity ecosystem.
 

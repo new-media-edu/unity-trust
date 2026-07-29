@@ -78,7 +78,7 @@ Color-matched fog is one of the fastest ways to add depth and hide where your ge
 ### The Global Volume
 Your scene automatically includes a **Global Volume**. Think of this as a cinematic filter sitting on your camera. Select it in the Hierarchy, find the **Vignette** effect in the Inspector, and try raising the **Intensity**. This darkens the edges of the screen for a focused, gallery-like feel.
 
-We'll go much deeper on the Volume system (color grading, tone mapping, depth of field) next session.
+The Volume can do a lot more (color grading, tone mapping, depth of field). The **[Advanced Lighting guide](lighting-advanced.md)** covers how the Volume system fits together.
 
 ## Going Further: Baking & Probes
 
@@ -180,4 +180,4 @@ Prepare your project for the final showcase.
 2. **Add Sound:** Ground the space with ambient audio (wind, room tone, water) using the Audio Sources from Day 2.
 3. **Camera Move:** Build a 30-second flythrough of your space, either by keyframing a camera in the Animation window or with Timeline and Cinemachine. Focus on smooth movement and interesting angles.
 
-Next session: **Post-Processing, Builds, and Showcase.**
+Next session: **Interactivity, Builds, and Showcase.**
