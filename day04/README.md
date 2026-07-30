@@ -183,14 +183,16 @@ In **Terrain Settings** (the far right icon), lower **Pixel Error** from `5` to 
 
 This makes Unity draw the terrain closer to the shape you actually sculpted, at some performance cost. Worth doing before you record video, and worth turning back up if your frame rate suffers while you work.
 
+## Trees and Grass (Optional)
+
+Unity 6 doesn't come with any plants, so if you want to add trees and grass you'll need to download some. [Quaternius Stylized Nature MegaKit](https://quaternius.com/packs/stylizednaturemegakit.html) is free, public domain, and has 40 trees plus plants, rocks and bushes. Unzip it, drag the folder into your Project window, and drag a tree into your scene.
+
+Two notes if you try it:
+
+- If the trees come in bright magenta, select their materials and run `Edit > Rendering > Materials > Convert Selected Built-in Materials to URP`.
+- To plant them across the terrain quickly, use the **third icon** (Paint Trees) and `Edit Trees... > Add Tree`. Make sure you actually drag a tree into the **Tree Prefab** slot, because an empty slot means painting silently does nothing.
+
 ### Terrain Troubleshooting
-
-**"I painted trees and nothing happened."**
-
-Two things are probably going on:
-
-1. **You have no tree assets.** Unity 6 ships with zero tree models. Under **Paint Trees**, `Edit Trees... > Add Tree` gives you an empty **Tree Prefab** slot, and if you leave it empty then painting does nothing at all, silently. You need to bring in actual tree prefabs first (see the foliage section).
-2. **Do not use `GameObject > 3D Object > Tree`.** Unity's built-in Tree Editor makes trees that use legacy shaders which **do not exist in URP**. They render solid magenta. This is a known, long-standing limitation, not something you've done wrong. Use imported prefabs instead.
 
 **"My terrain is cutting through my building."**
 
