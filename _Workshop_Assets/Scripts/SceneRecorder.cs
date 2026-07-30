@@ -281,7 +281,7 @@ namespace WorkshopAssets
         {
             var request = new RenderPipeline.StandardRequest { destination = target };
 
-            if (Cam.IsRenderRequestSupported(request))
+            if (RenderPipeline.SupportsRenderRequest(Cam, request))
             {
                 // URP / HDRP: renders this camera on demand, post-processing and all,
                 // without disturbing what the player sees.
