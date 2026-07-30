@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.IO;
 using UnityEngine;
+using UnityEngine.Rendering;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 #endif
@@ -232,6 +233,17 @@ public class SceneRecorder : MonoBehaviour
 
     void RenderCameraTo(RenderTexture target)
     {
+        var request = new RenderPipeline.StandardRequest { destination = target };
+
+        if (RenderPipeline.SupportsRenderRequest(Cam, request))
+        {
+            // URP and HDRP: renders this camera on demand with post-processing,
+            // without disturbing what the player sees.
+            Cam.SubmitRenderRequest(request);
+            return;
+        }
+
+        // Built-in pipeline.
         var previous = Cam.targetTexture;
         Cam.targetTexture = target;
         Cam.Render();

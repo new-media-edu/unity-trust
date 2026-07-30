@@ -40,7 +40,7 @@ To show your work outside of Unity, we need to record it. There are two ways: a 
 5. Find your files in a **Recordings** folder next to your Assets folder (`Show in Explorer` / `Reveal in Finder` on the project folder).
 
 Notes:
-- It captures exactly what that camera sees, at the resolution you set, no matter what size your Game view is.
+- It captures exactly what that camera sees, post-processing included, at the resolution you set, no matter what size your Game view is.
 - **Video Format** has two options. **Video** writes a playable `.mp4` straight out of Unity, which is what you want in class. **Png Sequence** writes numbered frames instead, for maximum quality; the Console prints the `ffmpeg` command to turn them into a movie.
 - The `.mp4` option only works inside the Unity Editor. In a standalone build it automatically falls back to PNG frames.
 - It records picture only, no audio.
