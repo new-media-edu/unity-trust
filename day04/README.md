@@ -11,8 +11,6 @@ This day is split into modules. Work through them in order if you're following a
 ### 1. [Terrain: Sculpting the Ground](terrain.md)
 Our floors so far have been flat ProBuilder surfaces. Unity's Terrain system sculpts organic ground: hills, valleys, riverbeds, dunes. Covers creating and correctly sizing a terrain, sculpting it, painting ground textures onto it, and a set of tricks for making it look convincing rather than like a video game level from 2004. Optional notes at the end on adding trees and grass.
 
-*Start here. It's the biggest visual change available today, and everything you record later is footage of this.*
-
 ### 2. [Scripted Interactivity](interactivity.md)
 Drag-and-drop scripts from the class files: spin an object, trigger a light when someone walks into a zone, crossfade audio between rooms, make something watch the visitor. No code to write.
 
