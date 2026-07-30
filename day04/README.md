@@ -45,6 +45,17 @@ Notes:
 - The `.mp4` option only works inside the Unity Editor. In a standalone build it automatically falls back to PNG frames.
 - It records picture only, no audio.
 - Set **Max Seconds** to stop automatically, handy for matching a 30-second flythrough.
+- **Save Frames** writes the numbered PNGs alongside the video, so you get both from one take.
+
+#### Assembling a video from frames
+
+If you end up with a folder of numbered PNGs, [ffmpeg](https://ffmpeg.org/download.html) turns them into a video. Run this from inside the frame folder:
+
+```
+ffmpeg -framerate 30 -i "frame_%05d.png" -c:v libx264 -pix_fmt yuv420p output.mp4
+```
+
+Replace `30` with your frame rate, `frame_%05d.png` with the actual naming pattern of your files, and `output.mp4` with the name you want. The Console also prints this command with your own numbers filled in when a recording stops.
 
 ### Option B: Unity Recorder (official package)
 
