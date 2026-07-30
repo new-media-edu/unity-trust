@@ -2,7 +2,87 @@
 
 **Session Time:** 2.5 Hours
 
-The final session is about that last 10% that makes a project feel finished. We'll add life and interaction, export standalone playable files, capture video of our worlds, and showcase them.
+The final session is about that last 10% that makes a project feel finished. We'll sculpt some real ground, add life and interaction, export standalone playable files, capture video of our worlds, and showcase them.
+
+## Terrain: Sculpting the Ground
+
+So far our floors have been flat ProBuilder surfaces. Unity's **Terrain** system lets us sculpt organic ground: hills, valleys, riverbeds, dunes.
+
+### Creating the Terrain
+
+1. Go to `GameObject > 3D Object > Terrain`.
+2. A new Terrain appears in the Hierarchy. It is **enormous** by default, and it is going to dwarf everything you've built. That's expected, we fix it next.
+
+### Resizing It
+
+There is no popup asking how big you want it, so we resize it after the fact.
+
+1. Select the **Terrain** in the Hierarchy.
+2. In the Inspector, the Terrain component has a row of five icons. Click the **far right icon** (Terrain Settings).
+3. Scroll down to **Mesh Resolution** and set:
+   - **Terrain Width:** `100`
+   - **Terrain Length:** `100`
+   - **Terrain Height:** `50`
+
+![Terrain Settings with Mesh Resolution at the bottom](../images/terrain-settings-resolution.png)
+
+> [!IMPORTANT]
+> Do this **before** you sculpt anything. Changing the width or length rescales any hills you've already made, and it stretches them out of shape.
+
+**Why change the height?** Terrain Height defaults to `600`, which is the vertical range the sculpting brush works across. At 600, a single click launches a mountain into the sky and sculpting feels broken. At `50` the brush becomes gentle and controllable.
+
+### Centering It
+
+A Terrain's position is its **corner**, not its middle. So a fresh terrain sits entirely off to one side of your scene.
+
+In the **Transform**, set the Position to:
+- **X:** `-50`
+- **Y:** `0`
+- **Z:** `-50`
+
+That's half the width and half the length, which pulls the terrain back so it's centered on the world origin.
+
+### Sculpting
+
+1. Back in the Terrain component, click the **second icon** (Paint Terrain).
+2. Make sure the dropdown below it says **Raise or Lower Terrain**.
+3. Pick a **Brush** shape from the grid. The soft, fuzzy ones give you smoother, more natural hills than the hard-edged ones.
+4. Set **Brush Size** and **Opacity**.
+   - **Brush Size** is how wide your brush is. Around `9` is good for detail, go much bigger for broad landscape shapes.
+   - **Opacity** is how fast it builds. Start **low**, around `0.01` to `0.1`. High opacity makes spikes, not landscapes.
+5. **Left click and drag** in the Scene view to raise the ground. **Hold Shift** and drag to lower it.
+
+![Sculpting a terrain in the Scene view](../images/terrain-sculpting.png)
+
+> [!TIP]
+> A brand new terrain sits at height zero, so you can only sculpt **upward**. To carve down into it (a valley, a pond, a crater) first raise the whole thing: choose **Set Height** from the dropdown, set Height to something like `5`, and click **Flatten**. Now you have room to go both directions.
+
+### Giving It a Surface
+
+Your terrain is currently a grey checkerboard. That is not a bug and it is not a broken material, it just means the terrain has no **Terrain Layer** yet. A Terrain Layer is the texture that gets painted onto the ground.
+
+1. In the Terrain component, click the **second icon** (Paint Terrain) again.
+2. Change the dropdown to **Paint Texture**.
+3. Under **Terrain Layers**, click **Edit Terrain Layers... > Create Layer**.
+4. A texture picker opens. Choose a ground texture. `_Workshop_Assets/Images/grass.jpg` works, or bring in your own.
+5. The checkerboard disappears. The **first** layer you add automatically covers the entire terrain.
+
+Now check the **Tiling Settings > Size** on that layer. If your ground looks like an extremely fine, busy, repeating pattern, the texture is tiling too often. Raise the Size values (try `5` and `5`, or `10` and `10`) until it reads as ground rather than as a pattern.
+
+**Adding a second surface.** Repeat steps 3 and 4 to create another layer (sand, rock, dirt, moss). Unlike the first one, this one does **not** flood the terrain. Select it, then paint it on by hand where you want it. Painting rock onto your steep slopes and leaving grass in the flats is the fastest way to make a landscape look deliberate.
+
+### Troubleshooting
+
+**"I painted trees and nothing happened."**
+
+Two things are probably going on:
+
+1. **You have no tree assets.** Unity 6 ships with zero tree models. Under **Paint Trees**, `Edit Trees... > Add Tree` gives you an empty **Tree Prefab** slot, and if you leave it empty then painting does nothing at all, silently. You need to bring in actual tree prefabs first (see the foliage section).
+2. **Do not use `GameObject > 3D Object > Tree`.** Unity's built-in Tree Editor makes trees that use legacy shaders which **do not exist in URP**. They render solid magenta. This is a known, long-standing limitation, not something you've done wrong. Use imported prefabs instead.
+
+**"My terrain is cutting through my building."**
+
+Sculpt around it, or lower the terrain's **Y** position so the ground sits below your existing floor and only pokes up where you want it to.
 
 ## Scripted Interactivity (No Coding Required)
 
