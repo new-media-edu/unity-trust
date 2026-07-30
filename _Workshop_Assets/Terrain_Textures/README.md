@@ -9,7 +9,8 @@ Each texture comes as two files:
 
 | Texture | Good for |
 |---|---|
-| `sparse_grass` | A base layer. Dry grass over soil, works as general ground cover. |
+| `grass_004` | A base layer. Lush green lawn grass. |
+| `sparse_grass` | A base layer. Dry grass over soil, browner and more muted. |
 | `roots` | Forest floor, undergrowth, anything overgrown. |
 | `rocky_trail_02` | Paths and worn routes. Paint it where people would walk. |
 | `cracked_red_ground` | Dry, arid, desert. Also good for a dried-out riverbed. |
@@ -18,11 +19,17 @@ These are **1K** resolution, which is deliberate. Terrain layers tile many times
 
 ## Credits
 
-All four textures are from [Poly Haven](https://polyhaven.com/textures) and are released under the [CC0 public domain licence](https://polyhaven.com/license), so they are free to use in anything, including commercial work, with no attribution required.
+All of these are released under the **CC0 public domain licence**, so they are free to use in anything, including commercial work, with no attribution required.
+
+From [Poly Haven](https://polyhaven.com/textures) ([licence](https://polyhaven.com/license)):
 
 - [rocky_trail_02](https://polyhaven.com/a/rocky_trail_02)
 - [roots](https://polyhaven.com/a/roots)
 - [cracked_red_ground](https://polyhaven.com/a/cracked_red_ground)
 - [sparse_grass](https://polyhaven.com/a/sparse_grass)
 
-Poly Haven is funded by its patrons. If these are useful to you, [consider supporting them](https://polyhaven.com/support).
+From [ambientCG](https://ambientcg.com/):
+
+- [Grass 004](https://ambientcg.com/view?id=Grass004)
+
+Both sites are funded by their patrons. If these are useful to you, consider supporting [Poly Haven](https://polyhaven.com/support) or [ambientCG](https://ambientcg.com/donate).

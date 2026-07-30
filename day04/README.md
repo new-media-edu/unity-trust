@@ -83,7 +83,8 @@ Your terrain is currently a grey checkerboard. That is not a bug and it is not a
 
 | Texture | Good for |
 |---|---|
-| `sparse_grass` | A base layer. Dry grass over soil, works as general ground cover. |
+| `grass_004` | A base layer. Lush green lawn grass. |
+| `sparse_grass` | A base layer. Dry grass over soil, browner and more muted. |
 | `roots` | Forest floor, undergrowth, anything overgrown. |
 | `rocky_trail_02` | Paths and worn routes. Paint it where people would walk. |
 | `cracked_red_ground` | Dry, arid, desert. Also good for a dried-out riverbed. |
@@ -100,7 +101,7 @@ Each one has a `_diff` file (the colour) and a `_nor_gl` file (the surface relie
 4. A texture picker opens. Choose a colour map, the file ending in **`_diff`**. `sparse_grass_diff_1k` is a good base.
 5. The checkerboard disappears. The **first** layer you add automatically covers the entire terrain.
 
-### Making It Look Right
+### Tiling and Normal Maps
 
 Two adjustments turn a flat-looking texture into convincing ground. Select your layer in the Terrain Layers list to find these.
 
@@ -115,7 +116,74 @@ Two adjustments turn a flat-looking texture into convincing ground. Select your 
 
 Try `rocky_trail_02` for this. Painting a worn path into the low ground and along the routes people would actually walk, and leaving grass everywhere else, is the fastest way to make a landscape look deliberate rather than generated. Lower the brush **Opacity** and the two surfaces blend into each other instead of meeting at a hard edge.
 
-### Troubleshooting
+## Making the Terrain Look Good
+
+A sculpted, textured terrain still tends to look like a video game level from 2004. These are the fixes, in order of how much they buy you per minute spent.
+
+> [!TIP]
+> If you only do two things, do the first two. They take about a minute combined and they change everything.
+
+### 1. Lower the sun
+
+Select your **Directional Light** and set its Rotation **X** to somewhere around `20` to `35`.
+
+Light coming from directly overhead flattens a landscape completely; every slope receives the same amount of light, so all your sculpting work becomes invisible. Low, raking light throws long shadows down the sides of your hills and suddenly the shape of the land reads. This is the single biggest difference between terrain that looks flat and terrain that looks like somewhere.
+
+It also makes the light warmer and more directional, which is most of what people mean when they say a shot looks cinematic.
+
+### 2. Turn on fog
+
+1. Open `Window > Rendering > Lighting`.
+2. Go to the **Environment** tab.
+3. Scroll to **Other Settings** and check **Fog**.
+4. Set **Mode** to `Exponential Squared` and **Density** to something small, around `0.01`.
+5. Set the fog **Color** by eyedropping a colour from your sky near the horizon.
+
+Fog does two jobs at once. It adds aerial depth, so distant hills read as distant instead of as flat cutouts. And it **hides the edge of your terrain**, which is otherwise the thing that most obviously breaks the illusion, since your world visibly stops and drops into nothing.
+
+> [!NOTE]
+> This is regular distance fog, not volumetric fog. URP doesn't have volumetric fog built in, so don't expect visible shafts of light.
+
+### 3. Nothing in nature is flat
+
+Large flat areas are the strongest tell that a terrain was made in a hurry. Real ground undulates everywhere, even where it looks level.
+
+Go back to **Raise or Lower Terrain**, set a **very large Brush Size** and a **very low Opacity** (`0.01`), and make a few slow passes over your flat areas. You want variation you can barely see. Then run **Smooth Height** over the result.
+
+### 4. Check your tiling
+
+If your ground reads as a flat sheet of single-colour paint rather than as a surface, the texture is tiling too few times. Select the layer and lower **Tiling Settings > Size** until actual detail appears.
+
+The reverse is also true: if it looks like busy visual noise, raise the Size. You are looking for the point where you can tell what the material is but you can't see the repeat.
+
+### 5. Soften the boundaries between layers
+
+Where two painted surfaces meet at a visible edge, it reads as paint. Select your second layer, drop the brush **Opacity** right down, and work back and forth over the boundary so the two surfaces interleave over a wide, uneven band instead of meeting at a line.
+
+While you're there: paint your rock layer onto the **steep** faces and let grass keep the flatter ground. That is how real landscapes work, because loose soil and plants can't hold onto a steep slope.
+
+### 6. Sit your building into the ground
+
+A structure resting on dead-flat terrain looks dropped in. Give it a foundation instead:
+
+1. Choose **Set Height** from the dropdown.
+2. Set a **Height** matching the ground level you want.
+3. Use a small brush to **flatten a deliberate terrace** for the building to sit on.
+4. Paint `rocky_trail_02` as a path leading up to the entrance.
+
+A flat pad plus a worn path is a small amount of work that makes the architecture and the landscape look like they belong to each other.
+
+### 7. Smooth your ridgelines
+
+If your hills look like long rounded worms (the shape a Raise brush naturally makes when you drag it), run **Smooth Height** along the tops with a medium brush. Real ridges are uneven: high in places, collapsed in others. Smoothing selectively, rather than everywhere, is what breaks up the uniformity.
+
+### 8. Sharpen the silhouette
+
+In **Terrain Settings** (the far right icon), lower **Pixel Error** from `5` to `1`.
+
+This makes Unity draw the terrain closer to the shape you actually sculpted, at some performance cost. Worth doing before you record video, and worth turning back up if your frame rate suffers while you work.
+
+### Terrain Troubleshooting
 
 **"I painted trees and nothing happened."**
 
