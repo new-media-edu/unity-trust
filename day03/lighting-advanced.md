@@ -1,6 +1,6 @@
 # Advanced Lighting (URP)
 
-The [basic lighting tips](README.md#simple-tips-for-better-lighting) get you a scene that reads well. This guide is for pushing into higher-quality, more cinematic lighting. Each section is independent - pick what your scene needs.
+The [basic lighting tips](lighting.md#simple-tips-for-better-lighting) get you a scene that reads well. This guide is for pushing into higher-quality, more cinematic lighting. Each section is independent - pick what your scene needs.
 
 Everything here assumes the workshop's **URP** project.
 

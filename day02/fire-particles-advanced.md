@@ -1,6 +1,6 @@
 # Advanced Fire (Particle Systems)
 
-The [basic fire](README.md#making-fire-particle-systems) gets you a working flame in a few minutes, but it reads flat and grey. Real fire looks *hot* - it glows, flickers, and trails smoke. This guide layers those on top.
+The [basic fire](particles.md) gets you a working flame in a few minutes, but it reads flat and grey. Real fire looks *hot* - it glows, flickers, and trails smoke. This guide layers those on top.
 
 Everything here assumes the workshop's **URP** project. Where a step is pipeline-specific, that's called out. Skip around - each section is an independent upgrade, roughly ordered by impact.
 

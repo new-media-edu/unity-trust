@@ -9,23 +9,23 @@ This day is split into modules. Work through them in order if you're following a
 ## The Modules
 
 ### 1. [Terrain: Sculpting the Ground](terrain.md)
-**~40 min.** Our floors so far have been flat ProBuilder surfaces. Unity's Terrain system sculpts organic ground: hills, valleys, riverbeds, dunes. Covers creating and correctly sizing a terrain, sculpting it, painting ground textures onto it, and a set of tricks for making it look convincing rather than like a video game level from 2004. Optional notes at the end on adding trees and grass.
+Our floors so far have been flat ProBuilder surfaces. Unity's Terrain system sculpts organic ground: hills, valleys, riverbeds, dunes. Covers creating and correctly sizing a terrain, sculpting it, painting ground textures onto it, and a set of tricks for making it look convincing rather than like a video game level from 2004. Optional notes at the end on adding trees and grass.
 
 *Start here. It's the biggest visual change available today, and everything you record later is footage of this.*
 
 ### 2. [Scripted Interactivity](interactivity.md)
-**~20 min.** Drag-and-drop scripts from the class files: spin an object, trigger a light when someone walks into a zone, crossfade audio between rooms, make something watch the visitor. No code to write.
+Drag-and-drop scripts from the class files: spin an object, trigger a light when someone walks into a zone, crossfade audio between rooms, make something watch the visitor. No code to write.
 
 ### 3. [Standalone Builds](builds.md)
-**~15 min.** Exporting your project as a `.app` or `.exe` that anyone can run without Unity installed.
+Exporting your project as a `.app` or `.exe` that anyone can run without Unity installed.
 
 ### 4. [Rendering & Output](recording.md)
-**~30 min.** Getting video and stills out of Unity, either with the SceneRecorder script from the class files or with Unity's official Recorder package. Includes assembling a video from a PNG sequence with ffmpeg.
+Getting video and stills out of Unity, either with the SceneRecorder script from the class files or with Unity's official Recorder package. Includes assembling a video from a PNG sequence with ffmpeg.
 
 *If time is short, do this one before builds. A video is what you'll actually show people.*
 
 ### 5. [Final Group Showcase](showcase.md)
-**~45 min.** Presenting our worlds to each other, and what to say about yours.
+Presenting our worlds to each other, and what to say about yours.
 
 ## Final Homework: Deployment & Sharing
 
