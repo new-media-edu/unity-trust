@@ -21,9 +21,9 @@ A few small moves make a scene look intentional instead of flat:
 
 > **Bloom makes lights glow.** To get that soft glow around bright lights and emissive surfaces, add a **Global Volume** (`GameObject > Volume > Global Volume`), add a **Bloom** override, and check **Post Processing** on your Camera. See the [advanced fire guide](../day02/fire-particles-advanced.md#6-bloom-makes-it-glow) for the full steps.
 
-## Setting the Mood: Sky, Fog & Volume
+## Setting the Mood: Sky & Volume
 
-Your lights are only half of it. The sky and the air between things do the rest.
+Your lights are only half of it. The sky does a lot of the rest.
 
 ### Skyboxes
 The Skybox provides the background *and* the ambient light that fills your shadows, so changing it changes the whole scene for free.
@@ -38,17 +38,6 @@ The Skybox provides the background *and* the ambient light that fills your shado
 4. Cycle through a few - a sunset, an overcast day, a night sky - and watch how the mood (and the ambient light) changes.
 
 > **Pro Tip:** Search for "HDRIs" to find realistic 360-degree backgrounds beyond this pack.
-
-### Fog
-In **URP** (the pipeline this workshop uses), fog is not a Volume override - it lives in the Lighting window next to the skybox settings.
-
-1. Open `Window > Rendering > Lighting` and go to the **Environment** tab.
-2. Scroll down and enable **Fog**.
-3. Set the **Mode** (Linear or Exponential), pick a **Color** that matches your skybox, and tune the density/distance until the far edges of your scene fade softly into the haze.
-
-Color-matched fog is one of the fastest ways to add depth and hide where your geometry ends.
-
-> **Note:** True *volumetric* fog with visible light beams (god rays) is an **HDRP** feature, not URP. If you want those, that's a reason to explore HDRP later - but the Environment-tab fog above covers most gallery moods.
 
 ### The Global Volume
 Your scene automatically includes a **Global Volume**. Think of this as a cinematic filter sitting on your camera. Select it in the Hierarchy, find the **Vignette** effect in the Inspector, and try raising the **Intensity**. This darkens the edges of the screen for a focused, gallery-like feel.

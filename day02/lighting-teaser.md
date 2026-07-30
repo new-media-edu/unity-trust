@@ -14,4 +14,4 @@ For each one, drag it around and tweak **Color** and **Intensity** in the Inspec
 
 > There's a fourth type, the **Area Light**, but it only shows up with baked lighting - we'll save it for Day 03.
 
-We'll go much deeper on lighting - warm/cool color, shadows, fog, baking, and full cinematic lighting - in **[Day 03](../day03/README.md)**.
+We'll go much deeper on lighting - warm/cool color, shadows, baking, and full cinematic lighting - in **[Day 03](../day03/README.md)**.

@@ -64,11 +64,9 @@ A **cookie** is a texture mask on a light - like a gobo/stencil in theater. It's
 - Import a grayscale texture, set its **Texture Type** appropriately, and drop it in the light's **Cookie** slot.
 - Works on Spotlights (a mask over the cone) and Directional Lights (a tiling pattern over the whole scene - great for fake tree shadows).
 
-## Fog and "volumetric" light
+## "Volumetric" light
 
-Plain **fog** (Lighting window > **Environment** > enable **Fog**, choose color/density) adds depth cheaply and is covered in the basic tips.
-
-True **volumetric lighting** - visible god-ray shafts and light scattering through fog - is **not built into URP** (it's a native HDRP feature). To get it in URP you need a third-party asset (e.g. a volumetric lighting/fog package from the Asset Store) or a custom **Renderer Feature**. Don't chase this unless a scene truly calls for it; a good fog color plus Bloom fakes most of the impression.
+True **volumetric lighting** - visible god-ray shafts and light scattering through the air - is **not built into URP** (it's a native HDRP feature). To get it in URP you need a third-party asset (e.g. a volumetric lighting package from the Asset Store) or a custom **Renderer Feature**. Don't chase this unless a scene truly calls for it; Bloom fakes most of the impression.
 
 ## A sensible order of operations
 
@@ -76,6 +74,6 @@ True **volumetric lighting** - visible god-ray shafts and light scattering throu
 2. Add a **Volume** with **Tonemapping** first, then **Bloom**, then light **Color Adjustments**. Tonemapping before bloom stops highlights from clipping.
 3. Mark static geometry **Static**, set lights to **Baked/Mixed**, and **Generate Lighting**.
 4. Add **Light Probes** so moving objects match, and **Reflection Probes** for shiny surfaces.
-5. Layer in cookies, flicker, and fog for character.
+5. Layer in cookies and flicker for character.
 
 You rarely need all of it. Color + tonemapping + one bake already carries a scene most of the way.
