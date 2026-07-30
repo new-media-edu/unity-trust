@@ -79,22 +79,25 @@ That dropdown has more than just Raise or Lower. Click it and you'll see:
 
 Your terrain is currently a grey checkerboard. That is not a bug and it is not a broken material, it just means the terrain has no **Terrain Layer** yet. A Terrain Layer is the texture that gets painted onto the ground.
 
-**First, get a ground texture.** Download one from [ambientCG](https://ambientcg.com/), which has 2000+ materials, all free under the CC0 public domain license, no attribution or account needed. Good starting points:
+**First, get a ground texture.** The class files include four, ready to go. Drag the whole `_Workshop_Assets/Terrain_Textures/` folder into your Unity **Project** window.
 
-- [Grass 004](https://ambientcg.com/view?id=Grass004) - dense, short, lawn-like grass
-- [Grass 001](https://ambientcg.com/view?id=Grass001) - longer, wilder grass
-- [Ground 037](https://ambientcg.com/view?id=Ground037) - bare dirt, good as a second layer for paths
+| Texture | Good for |
+|---|---|
+| `sparse_grass` | A base layer. Dry grass over soil, works as general ground cover. |
+| `roots` | Forest floor, undergrowth, anything overgrown. |
+| `rocky_trail_02` | Paths and worn routes. Paint it where people would walk. |
+| `cracked_red_ground` | Dry, arid, desert. Also good for a dried-out riverbed. |
 
-Choose the **2K JPG** download. It's plenty for our purposes, and the 4K and 8K options will slow your laptop down for no visible benefit. Unzip it and drag the whole folder into your Unity **Project** window.
+Each one has a `_diff` file (the colour) and a `_nor_gl` file (the surface relief). We'll use both.
 
-[Poly Haven](https://polyhaven.com/textures) is another excellent CC0 source. `forest_ground_06` and `dirt` are both strong choices there.
+**Want more?** [Poly Haven](https://polyhaven.com/textures) and [ambientCG](https://ambientcg.com/) both have thousands of ground textures, free under the CC0 public domain licence, no account needed. Download at **1K or 2K**; the 4K and 8K options will slow your laptop down for no visible benefit at terrain scale.
 
 **Then build the layer:**
 
 1. In the Terrain component, click the **second icon** (Paint Terrain) again.
 2. Change the dropdown to **Paint Texture**.
 3. Under **Terrain Layers**, click **Edit Terrain Layers... > Create Layer**.
-4. A texture picker opens. Choose the **Color** map from the folder you just imported (the file ending in `_Color`).
+4. A texture picker opens. Choose a colour map, the file ending in **`_diff`**. `sparse_grass_diff_1k` is a good base.
 5. The checkerboard disappears. The **first** layer you add automatically covers the entire terrain.
 
 ### Making It Look Right
@@ -103,12 +106,14 @@ Two adjustments turn a flat-looking texture into convincing ground. Select your 
 
 **Tiling.** Set **Tiling Settings > Size** to around `5` and `5`. Too small and the ground reads as a fine busy pattern rather than a surface; too large and it turns to blurry mush. Nudge it until it looks like ground and not like wallpaper.
 
-**The Normal Map.** This is the payoff from our materials session. Drag the file ending in **`_NormalGL`** into the layer's **Normal Map** slot. Suddenly the ground catches light and has real surface relief instead of looking painted on. It is the single biggest quality jump available here for one drag.
+**The Normal Map.** This is the payoff from our materials session. Drag the matching **`_nor_gl`** file into the layer's **Normal Map** slot. Suddenly the ground catches light and has real surface relief instead of looking painted on. It is the single biggest quality jump available here for one drag.
 
-> [!WARNING]
-> ambientCG ships two normal maps, `_NormalGL` and `_NormalDX`. Unity wants the **GL** one. Using DX inverts the lighting so bumps read as dents, which looks subtly and unfixably wrong.
+> [!NOTE]
+> `nor_gl` means "normal map, OpenGL format," which is the flavour Unity expects. If you download textures elsewhere and see a choice between **GL** and **DX**, always take **GL**. The DX version inverts the lighting so bumps read as dents, which looks subtly and unfixably wrong.
 
-**Adding a second surface.** Repeat steps 3 and 4 to create another layer (dirt, sand, rock, moss). Unlike the first one, this one does **not** flood the terrain. Select it, then paint it on by hand where you want it. Painting dirt into the low ground and along the routes people would actually walk, and leaving grass everywhere else, is the fastest way to make a landscape look deliberate rather than generated.
+**Adding a second surface.** Repeat steps 3 and 4 to create another layer. Unlike the first one, this one does **not** flood the terrain. Select it, then paint it on by hand where you want it.
+
+Try `rocky_trail_02` for this. Painting a worn path into the low ground and along the routes people would actually walk, and leaving grass everywhere else, is the fastest way to make a landscape look deliberate rather than generated. Lower the brush **Opacity** and the two surfaces blend into each other instead of meeting at a hard edge.
 
 ### Troubleshooting
 
